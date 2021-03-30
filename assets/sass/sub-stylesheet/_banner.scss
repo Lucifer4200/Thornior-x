@@ -1,0 +1,71 @@
+//*==== banner area start =====*//
+.banner-area {
+    .banner-slider {
+        position: relative;
+        overflow: hidden;
+        .swiper-wrapper {
+            .swiper-slide {
+                min-height: 500px;
+                background-size: cover;
+                object-fit: cover;
+                background-position: center;
+                .thumb-content {
+                    .content-desc {
+                        position: absolute;
+                        bottom: 40px;
+                        left: 50%;
+                        width: 100%;
+                        text-align: center;
+                        transform: translateX(-50%);
+                        h4 {
+                            margin: 0;
+                            color: $white-color;
+                            text-transform: uppercase;
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 20px;
+                            font-weight: 100;
+                            color: $white-color;
+                            text-transform: uppercase;
+                            @include breakpoint (md) {
+                                font-size: 25px;
+                            }
+                            @include breakpoint (lg) {
+                                font-size: 30px;
+                            }
+                        }
+                        .time-line {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            strong {
+                                color: $white-color;
+                                text-transform: uppercase;
+                                padding-right: 10px;
+                            }
+                            span {
+                                color: $white-color;
+                                font-weight: 100;
+                                padding-left: 10px;
+                                text-transform: uppercase;
+                                border-left: 1px solid $white-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //swiper button custom
+        .swiper-button-next, .swiper-button-prev {
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            background: $white-color;
+            &::after, &::before {
+                font-size: 20px;
+            }
+        }
+    }
+}
+//*==== banner area ends  =====*//
