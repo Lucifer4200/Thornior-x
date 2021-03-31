@@ -74,6 +74,12 @@
         return false;
     });
 
+    // lightcase activation//
+	$('a[data-rel^=lightcase]').lightcase();
+	$(window).on('load', function(){
+		$('.preloader').fadeOut(1000);
+	})
+
     // banner-slider activation
     var swiper = new Swiper('.banner-slider', {
         slidesPerView: 1.5,

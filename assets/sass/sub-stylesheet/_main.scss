@@ -320,6 +320,101 @@
                             }
                         }
                     }
+                    &.style-one {
+                        li {
+                            .rec-content {
+                                width: 100%;
+                                span {
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .blog-description {
+            position: relative;
+            .blog-social {
+                @include breakpoint (sm) {
+                    position: absolute;
+                    top: 0;
+                    left: -8%;  
+                }
+                @include breakpoint (lg) {
+                    left: -15%;
+                }
+                ul.social-list {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    @include breakpoint (max-sm) {
+                        display: flex;
+                        padding-bottom: 25px;
+                    }
+                    li {
+                        margin: 0 5px;
+                        @include breakpoint (sm) {
+                            margin: 15px 0;
+                        }
+                        a {
+                            i {
+                                font-size: 25px;
+                                color: #000;
+                                @include breakpoint (sm) {
+                                    font-size: 30px;
+                                }
+                                @include breakpoint (md) {
+                                    font-size: 45px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .des-text {
+                h4 {
+                    margin: 0;
+                    padding-bottom: 25px;
+                }
+                p {
+                    margin: 0;
+                    padding-bottom: 50px;
+                }
+            }
+            .des-tips {
+                ul.tips-list {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    .tips-title {
+                        h3 {
+                            margin: 0;
+                        }
+                    }
+                    li {
+                        width: 100%;
+                        @extend %flex;
+                        .tips-crount {
+                            width: 15%;
+                            span {
+                                font-size: 35px;
+                                color: $theme-color;
+                                @include breakpoint (md) {
+                                    font-size: 45px;
+                                }
+                            }
+                        }
+                        .tips-text {
+                            width: calc(100% - 15%);
+                        }
+                    }
+                }
+            }
+            .des-thumb {
+                padding: 50px 0;
+                img {
+                    width: 100%;
                 }
             }
         }

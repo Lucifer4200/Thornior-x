@@ -69,3 +69,69 @@
     }
 }
 //*==== banner area ends  =====*//
+
+// *===== page header css start ==== *//
+.page-header {
+    padding: $common-padding;
+    .header-content {
+        text-align: center;
+        h3 {
+            margin: 0 auto;
+            line-height: 1.2;
+            max-width: 700px;
+        }
+        span {
+            padding-top: 40px;
+            display: inline-block;
+        }
+    }
+}
+// *===== page header css ends  ==== *//
+
+//*====== blog video banner css start ====*//
+.blog-video-banner {
+    .video-position {
+        position: relative;
+        overflow: hidden;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9;
+            background: rgba(63, 63, 78, .28);
+        }
+        .video-thumb {
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+            }
+            .video-icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 11;
+                transform: translate(-50%, -50%);
+                a {
+                    i {
+                        height: 40px;
+                        width: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 100%;
+                        color: $theme-color;
+                        background: $white-color;
+                        @include breakpoint (sm) {
+                            height: 60px;
+                            width: 60px;
+                            line-height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*====== blog video banner css ends  ====*//
