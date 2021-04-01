@@ -159,14 +159,14 @@ button.btn {
 }
 .btn{
     font-size: 14px;
-    padding: 12px 20px;
+    padding: 5px 20px;
     border: none;
     cursor: pointer;
     outline: none;
     display: inline-flex;
     align-items: center;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 5px;
     position: relative;
     background: $theme-color;
     transition: all 0.3s ease-in-out;
@@ -174,7 +174,7 @@ button.btn {
         box-shadow: none;
     }
     &:hover {
-        background: #ef7f7f;
+        background: $primary-color;
         span, i {
             color: $white-color;
         }
@@ -589,6 +589,7 @@ form {
                 transition: all 0.3s ease-in-out;
             }
             &:focus {
+                box-shadow: none;
                 border-color: #000;
                 &::placeholder {
                     color: #000;
@@ -705,8 +706,7 @@ form {
 
 
 %shadow {
-    -webkit-box-shadow: 3px 0 35px rgba(0, 0, 0, .35);
-    box-shadow: 3px 0 35px rgba(0, 0, 0, .35);
+    box-shadow: -1px 1px 16px 0px rgba(156, 150, 150, .5);
 }
 
 %border {

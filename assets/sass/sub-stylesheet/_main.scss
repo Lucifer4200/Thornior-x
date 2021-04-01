@@ -421,3 +421,119 @@
     }
 }
 // *==== blog area css ends  ==== *//
+
+//?====== about blog page css start =====?//
+
+//*=== about area css start ===*//
+.about-area {
+    padding: 60px 0;
+    @include breakpoint (lg) {
+        padding: 80px 0;
+    }
+    .section-wrapper {
+        overflow: visible;
+        .about-content {
+            h2 {
+                margin: 0;
+                padding-bottom: 15px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        .about-thumb {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            .follow-ours {
+                position: absolute;
+                top: 10px;
+                left: 105%;
+                height: 100%;
+                @include breakpoint (md) {
+                    top: 50px;
+                }
+                @include breakpoint (lg) {
+                    left: 102%;
+                }
+                @include breakpoint (xl) {
+                    left: 106%;
+                }
+                ul.social-link {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                }
+                .follow-text {
+                    position: absolute;
+                    top: 65%;
+                    left: -42px;
+                    width: 95px;
+                    transform: rotate(90deg);
+                    @include breakpoint (sm) {
+                        top: 50%;
+                        left: -40px;
+                    }
+                    p {
+                        margin: 0;
+                        display: inline-block;
+                        position: relative;
+                        &::after {
+                            @extend %absolute;
+                            top: 50%;
+                            left: 110%;
+                            height: 2px;
+                            width: 70px;
+                            transform: translateY(-50%);
+                            background: #adb5bd;
+                            @include breakpoint (sm) {
+                                width: 120px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== about area css ends  ===*//
+
+//*=== about contact css start ===*//
+.about-contact {
+    padding: 60px 0;
+    background: #f8f9fa;
+    @include breakpoint (sm) {
+        padding: 80px 0;
+    }
+    .section-wrapper {
+        position: relative;
+        overflow: visible;
+        &::after {
+            position: absolute;
+            content: "\f291";
+            font-family: "Font Awesome 5 Brands";
+            right: 0;
+            top: 50%;
+            font-size: 45px;
+            opacity: .8;
+            transform: translateY(-50%);
+        }
+        .about-form {
+            padding: 25px;
+            border-radius: 5px;
+            background: $white-color;
+            @extend %shadow;
+            form {
+                .input-group {
+                    input.form-control, textarea {
+                        background: #f8f9fa;
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== about contact css start ===*//
+
+//?====== about blog page css ends  =====?//
