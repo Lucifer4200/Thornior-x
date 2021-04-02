@@ -167,5 +167,95 @@
         }
     });
 
+    // category-slider1 activation
+    var swiper = new Swiper('.category-slide1', {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 3,
+            }
+        }
+    });
+
+    // category-slider1 activation
+    var swiper = new Swiper('.category-slide1in2', {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 3,
+            }
+        }
+    });
+
+    // category-slider1 activation
+    var swiper = new Swiper('.category-slide1in3', {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 3,
+            }
+        }
+    });
+
+    // category-slider2 activation
+    var swiper = new Swiper('.category-slide2', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            }
+        }
+    });
+
+    // category-slider3 activation
+    var swiper = new Swiper('.category-slide3', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            }
+        }
+    });
+
 
 })(jQuery);

@@ -537,3 +537,180 @@
 //*=== about contact css start ===*//
 
 //?====== about blog page css ends  =====?//
+
+//?====== Blogs new page css start =====?//
+
+//*=== Blog card css satart ===*//
+.blog-card {
+    padding: 60px 0;
+    @include breakpoint (md) {
+        padding: $common-padding;
+    }
+    .section-wrapper {
+        overflow: visible;
+        .card {
+            padding: 25px;
+            text-align: center;
+            border: 0;
+            box-shadow: 0 0 12px 0 #f1f4f6;
+            background: $white-color;
+            transition: all .3s ease-in-out;
+            &:hover {
+                transform: translateY(-5px)scale(1.05);
+            }
+            .card-thumb {
+                img {
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 100%;
+                }
+            }
+            .card-text {
+                padding: 15px 0 20px;
+                h4 {
+                    margin: 0;
+                    padding-bottom: 6px;
+                    position: relative;
+                    &::after {
+                        @extend %absolute;
+                        bottom: 0;
+                        left: 50%;
+                        height: 2px;
+                        width: 50px;
+                        background: $theme-color;
+                        transform: translateX(-50%);
+                    }
+                }
+                p {
+                    margin: 0;
+                    padding-top: 12px;
+                }
+            }
+            .card-media {
+                ul.media-list {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    @extend %flex;
+                    align-items: center;
+                    justify-content: center;
+                    li {
+                        margin: 2.5px;
+                        a {
+                            text-decoration: none;
+                            &:hover {
+                                i {
+                                    color: $white-color;
+                                    border-color: $theme-color;
+                                    background: $theme-color;
+                                }
+                            }
+                            i {
+                                height: 25px;
+                                width: 25px;
+                                line-height: 25px;
+                                font-size: 12px;
+                                text-align: center;
+                                border-radius: 100%;
+                                border: 1px solid #adb5bd;
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== Blog card css ends  ===*//
+
+//?====== Blogs new page css ends  =====?//
+
+//?====== Blog category page css start =====?//
+
+//*=== category slider css start ===*//
+.category-slider {
+    padding: 60px 0;
+    background: #f8f9fa;
+    @include breakpoint (md) {
+        padding: $common-padding;
+    }
+    .section-wrapper {
+        overflow: visible;
+        .category-wrapper {
+            padding: 16px;
+            border-radius: 5px;
+            background: $white-color;
+            .slide-header {
+                h4 {
+                    margin: 0;
+                    padding-bottom: 6px;
+                    position: relative;
+                    text-transform: uppercase;
+                    &::after {
+                        @extend %absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        width: 60px;
+                        background: #b1981b;
+                    }
+                }
+                p {
+                    margin: 0;
+                    padding-top: 12px;
+                }
+            }
+            .category-slide1, .category-slide1in2, .category-slide1in3, .category-slide2, .category-slide3 {
+                overflow: hidden;
+                padding-top: 50px;
+                position: relative;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .blog-item {
+                            &.style-two {
+                                .blog-text {
+                                    .blog-cat {
+                                        span {
+                                            font-size: 10px;
+                                        }
+                                    }
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                }
+                                .blog-timeline {
+                                    .time-line {
+                                        span {
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-button-next, .swiper-button-prev {
+                    position: absolute;
+                    top: 20px;
+                    right: 0;
+                    &::after {
+                        font-size: 12px;
+                        height: 20px;
+                        width: 30px;
+                        line-height: 20px;
+                        text-align: center;
+                        background: $theme-color;
+                    }
+                }
+                .swiper-button-prev {
+                    right: 40px;
+                    left: auto;
+                }
+            }
+        }
+    }
+}
+//*=== category slider css ends  ===*//
+
+//?====== Blog category page css ends  =====?//

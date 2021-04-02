@@ -85,6 +85,60 @@
             display: inline-block;
         }
     }
+    &.style-one {
+        padding: 0;
+        min-height: 200px;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../../assets/images/banner/page-header/01.jpg);
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+        }
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            h2 {
+                margin: 0;
+                color: $white-color;
+                position: relative;
+                @include breakpoint (max-sm) {
+                    font-size: 35px;
+                }
+                &::before, &::after {
+                    @extend %absolute;
+                    top: 50%;
+                    height: 2px;
+                    width: 60px;
+                    background: #928888;
+                    transform: translateY(-50%);
+                    @include  breakpoint (sm) {
+                        width: 100px;
+                    }
+                }
+                &::before {
+                    right: 105%;
+                    @include breakpoint (sm) {
+                        right: 125%;
+                    }
+                }
+                &::after {
+                    left: 105%;
+                    @include breakpoint (sm) {
+                        left: 125%;
+                    }
+                }
+            }
+        }
+    }
 }
 // *===== page header css ends  ==== *//
 
