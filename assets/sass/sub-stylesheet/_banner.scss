@@ -142,6 +142,8 @@
     &.style-two {
         .header-content {
             h2 {
+                letter-spacing: 2px;
+                text-transform: uppercase;
                 &::after, &::before {
                     content: none;
                 }

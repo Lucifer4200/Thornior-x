@@ -984,8 +984,11 @@ header .header-main .header-item.style-one .header-bottom {
           @media (min-width: 576px) {
             .page-header.style-one .header-content h2::after {
               left: 125%; } }
-  .page-header.style-two .header-content h2::after, .page-header.style-two .header-content h2::before {
-    content: none; }
+  .page-header.style-two .header-content h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+    .page-header.style-two .header-content h2::after, .page-header.style-two .header-content h2::before {
+      content: none; }
   .page-header.style-two .header-content p {
     color: #fff;
     text-transform: uppercase; }
