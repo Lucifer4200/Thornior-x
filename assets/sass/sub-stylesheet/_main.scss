@@ -714,3 +714,60 @@
 //*=== category slider css ends  ===*//
 
 //?====== Blog category page css ends  =====?//
+
+
+//?====== select blog page css start  =====?//
+
+//*=== latest blog css start ===*//
+.latest-blog {
+    padding: 60px 0;
+    @include breakpoint (md) {
+        padding: $common-padding;
+    }
+    .section-wrapper {
+        overflow: visible;
+        .latest-blog-slider {
+            overflow: hidden;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .blog-item {
+                        .blog-timeline {
+                            .bloger-thumb {
+                                img {
+                                    height: 40px;
+                                    width: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== latest blog css ends  ===*//
+
+//*=== common blog item css ===*//
+.blog-item {
+    .thumb-crount {
+        @extend %flex;
+        align-items: center;
+        justify-content: space-between;
+        .crount {
+            width: 50%;
+            span {
+                color: silver;
+                font-weight: 600;
+                font-size: 80px;
+                letter-spacing: 16px;
+            }
+        }
+        .item-thumb {
+            width: calc(100% - 50%);
+        }
+    }
+}
+
+
+//?====== select blog page css ends  =====?//
+

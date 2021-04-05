@@ -139,6 +139,22 @@
             }
         }
     }
+    &.style-two {
+        .header-content {
+            h2 {
+                &::after, &::before {
+                    content: none;
+                }
+            }
+            p {
+                color: $white-color;
+                text-transform: uppercase;
+                @include breakpoint (sm) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
 // *===== page header css ends  ==== *//
 

@@ -257,5 +257,111 @@
         }
     });
 
+    // latest blog activation
+    var swiper = new Swiper('.latest-blog-slider', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.latest-button-next',
+            prevEl: '.latest-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1.5,
+            },
+            768: {
+                slidesPerView: 3.5,
+            },
+            1024: {
+                slidesPerView: 5.5,
+            },
+        }
+    });
+
+    // viewed blog activation
+    var swiper = new Swiper('.viewed-blog-slider', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        navigation: {
+            nextEl: '.viewed-button-next',
+            prevEl: '.viewed-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        }
+    });
+
+    // thornior blog activation
+    var swiper = new Swiper('.thornior-blog-slider', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.thornior-button-next',
+            prevEl: '.thornior-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1.5,
+            },
+            768: {
+                slidesPerView: 3.5,
+            },
+            1024: {
+                slidesPerView: 5.5,
+            },
+        }
+    });
+
+     // videos blog activation
+     var swiper = new Swiper('.videos-blog-slider', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.videos-button-next',
+            prevEl: '.videos-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1.5,
+            },
+            768: {
+                slidesPerView: 3.5,
+            },
+            1024: {
+                slidesPerView: 5.5,
+            },
+        }
+    });
+
+
+     // collabs blog activation
+     var swiper = new Swiper('.collabs-blog-slider', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.collabs-button-next',
+            prevEl: '.collabs-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1.5,
+            },
+            768: {
+                slidesPerView: 3.5,
+            },
+            1024: {
+                slidesPerView: 5.5,
+            },
+        }
+    });
+
 
 })(jQuery);
