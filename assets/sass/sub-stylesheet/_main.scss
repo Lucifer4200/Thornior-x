@@ -1,6 +1,11 @@
 //*===== categori css start ====*//
 .categories {
     padding: 40px 0;
+    .section-header {
+        &::before {
+            content: none;
+        }
+    }
     .section-wrapper {
         position: relative;
         .categori-slider {
@@ -46,6 +51,25 @@
                 left: auto;
             }
         }
+    }
+    &.style-one {
+        .section-wrapper {
+            .categori-slider {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .categori-item {
+                            .item-thumb {
+                                img {
+                                    height: 100px;
+                                    width: 100px;
+                                    border-radius: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }  
     }
 }
 //*===== categori css ends  ====*//
@@ -719,15 +743,15 @@
 //?====== select blog page css start  =====?//
 
 //*=== latest blog css start ===*//
-.latest-blog {
+.latest-blog{
     padding: 60px 0;
     @include breakpoint (md) {
         padding: $common-padding;
     }
     .section-wrapper {
-        overflow: visible;
+        overflow: hidden;
         .latest-blog-slider {
-            overflow: hidden;
+            position: relative;
             .swiper-wrapper {
                 .swiper-slide {
                     .blog-item {
@@ -742,10 +766,79 @@
                     }
                 }
             }
+            .swiper-scrollbar {
+                height: 3px;
+                top: -21px;
+                left: 0
+            }
         }
     }
 }
 //*=== latest blog css ends  ===*//
+
+//*==== viewed blog css start ====*//
+.viewed-blog {
+    .section-wrapper {
+        overflow: hidden;
+        .viewed-blog-slider {
+            position: relative;
+            .swiper-scrollbar {
+                height: 3px;
+                top: -21px;
+                left: 0
+            }
+        }
+    }
+}
+//*==== viewed blog css ends ====*//
+
+//*==== thornior blog css start ====*//
+.thornior-blog {
+    .section-wrapper {
+        overflow: hidden;
+        .thornior-blog-slider {
+            position: relative;
+            .swiper-scrollbar {
+                height: 3px;
+                top: -21px;
+                left: 0
+            }
+        }
+    }
+}
+//*==== thornior blog css ends ====*//
+
+//*==== videos blog css start ====*//
+.videos-blog {
+    .section-wrapper {
+        overflow: hidden;
+        .videos-blog-slider {
+            position: relative;
+            .swiper-scrollbar {
+                height: 3px;
+                top: -21px;
+                left: 0
+            }
+        }
+    }
+}
+//*==== videos blog css ends ====*//
+
+//*==== collabs blog css start ====*//
+.collabs-blog {
+    .section-wrapper {
+        overflow: hidden;
+        .collabs-blog-slider {
+            position: relative;
+            .swiper-scrollbar {
+                height: 3px;
+                top: -21px;
+                left: 0
+            }
+        }
+    }
+}
+//*==== collabs blog css ends ====*//
 
 //*=== common blog item css ===*//
 .blog-item {
@@ -767,7 +860,48 @@
         }
     }
 }
-
+//*=== common blog item css ===*//
 
 //?====== select blog page css ends  =====?//
+
+
+//?======= Blog video page css start ======?//
+
+//*==== explore creator css start ===*//
+.explore-creator {
+    .section-header {
+        &::before {
+            content: none;
+        }
+    }
+    .section-wrapper {
+        .creator-item {
+            text-align: center;
+            .item-thumb {
+                img {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 100%;
+                }
+            }
+            .item-text {
+                padding-top: 12px;
+                h4 {
+                    margin: 0;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            .item-link {
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+//*==== explore creator css ends  ===*//
+
+//?======= Blog video page css ends  ======?//
 

@@ -265,6 +265,9 @@
             nextEl: '.latest-button-next',
             prevEl: '.latest-button-prev',
         },
+        scrollbar: {
+            el: '.swiper-scrollbar' 
+        },
         breakpoints: {
             640: {
                 slidesPerView: 1.5,
@@ -285,6 +288,9 @@
         navigation: {
             nextEl: '.viewed-button-next',
             prevEl: '.viewed-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar' 
         },
         breakpoints: {
             640: {
@@ -307,6 +313,9 @@
             nextEl: '.thornior-button-next',
             prevEl: '.thornior-button-prev',
         },
+        scrollbar: {
+            el: '.swiper-scrollbar' 
+        },
         breakpoints: {
             640: {
                 slidesPerView: 1.5,
@@ -327,6 +336,9 @@
         navigation: {
             nextEl: '.videos-button-next',
             prevEl: '.videos-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar' 
         },
         breakpoints: {
             640: {
@@ -350,6 +362,9 @@
             nextEl: '.collabs-button-next',
             prevEl: '.collabs-button-prev',
         },
+        scrollbar: {
+            el: '.swiper-scrollbar' 
+        },
         breakpoints: {
             640: {
                 slidesPerView: 1.5,
@@ -359,6 +374,30 @@
             },
             1024: {
                 slidesPerView: 5.5,
+            },
+        }
+    });
+
+    // blog video banner 2 colum activation
+    var swiper = new Swiper('.blog-video-slider', {
+        slidesPerView: 1,
+        slidesPerColumn: 2,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints : {
+            640: {
+                slidesPerView: 1,
+                slidesPerColumn: 2,
+            },
+            768: {
+                slidesPerView: 2,
+                slidesPerColumn: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+                slidesPerColumn: 2,
             },
         }
     });
