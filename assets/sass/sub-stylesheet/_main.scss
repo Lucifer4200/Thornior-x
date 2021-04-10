@@ -239,6 +239,18 @@
             }
         }
     }
+
+    //?slider plceholder img
+    &.style-one {
+        .blog-timeline {
+            .bloger-thumb {
+                img {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+    }
 }
 
 // *==== blog categori css ends  ====*//
@@ -752,20 +764,6 @@
         overflow: hidden;
         .latest-blog-slider {
             position: relative;
-            .swiper-wrapper {
-                .swiper-slide {
-                    .blog-item {
-                        .blog-timeline {
-                            .bloger-thumb {
-                                img {
-                                    height: 40px;
-                                    width: 40px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
             .swiper-scrollbar {
                 height: 3px;
                 top: -21px;
@@ -782,6 +780,7 @@
         overflow: hidden;
         .viewed-blog-slider {
             position: relative;
+            
             .swiper-scrollbar {
                 height: 3px;
                 top: -21px;
@@ -869,12 +868,37 @@
 
 //*==== explore creator css start ===*//
 .explore-creator {
+    position: relative;
+    padding: 30px 0;
+    @include breakpoint (lg) {
+        padding-top: 30px;
+    }
+    &::before {
+        @extend %absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #d8d4ca;
+        @include breakpoint (lg) {
+            height: 60%;
+        }
+    }
     .section-header {
+        z-index: 1;
+        position: relative;
         &::before {
             content: none;
         }
+        h3 {
+            letter-spacing: 2px;
+            background: transparent;
+            text-transform: uppercase;
+        }
     }
     .section-wrapper {
+        z-index: 1;
+        position: relative;
         .creator-item {
             text-align: center;
             .item-thumb {

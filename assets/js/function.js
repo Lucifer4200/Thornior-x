@@ -380,7 +380,7 @@
 
     // blog video banner 2 colum activation
     var swiper = new Swiper('.blog-video-slider', {
-        slidesPerView: 1,
+        slidesPerView: 2,
         slidesPerColumn: 2,
         pagination: {
           el: '.swiper-pagination',
@@ -388,7 +388,7 @@
         },
         breakpoints : {
             640: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 slidesPerColumn: 2,
             },
             768: {

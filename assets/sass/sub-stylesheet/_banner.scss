@@ -255,10 +255,13 @@
                             p {
                                 margin: 0;
                                 padding-top: 12px;
-                                font-size: 18px;
+                                font-size: 10px;
                                 color: $white-color;
                                 max-width: 350px;
                                 margin-right: auto;
+                                @include breakpoint (sm) {
+                                    font-size: 18px;
+                                }
                             }
                         }
                     }
