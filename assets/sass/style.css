@@ -241,6 +241,9 @@ button.btn {
     position: absolute;
     top: 0;
     right: 0; }
+    @media (max-width: 575px) {
+      .section-header .slider-arrow {
+        display: none; } }
     .section-header .slider-arrow .next, .section-header .slider-arrow .prev {
       height: 30px;
       width: 40px;

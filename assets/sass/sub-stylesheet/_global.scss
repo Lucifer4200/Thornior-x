@@ -264,6 +264,9 @@ button.btn {
         position: absolute;
         top: 0;
         right: 0;
+        @include breakpoint (max-sm) {
+            display: none;
+        }
         .next, .prev {
             height: 30px;
             width: 40px;
