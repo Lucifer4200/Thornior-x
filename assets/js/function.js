@@ -402,5 +402,47 @@
         }
     });
 
+    // blog profile activation
+    var swiper = new Swiper('.blog-profile-slider', {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.latest-button-next',
+            prevEl: '.latest-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1.5,
+            },
+            768: {
+                slidesPerView: 2.5,
+            },
+            1024: {
+                slidesPerView: 3.5,
+            },
+        }
+    });
+
+     // blog profile activation
+     var swiper = new Swiper('.newcategory-slider', {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.new-button-next',
+            prevEl: '.new-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 4,
+            },
+            1024: {
+                slidesPerView: 7,
+            },
+        }
+    });
+
 
 })(jQuery);
