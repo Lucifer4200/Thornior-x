@@ -932,6 +932,24 @@
 
 //?====== Blog profile page css start ======?//
 
+//*=== profile post tabs start ===*//
+// ul.nav {
+//     margin: 0;
+//     li.nav-item {
+//         button.nav-link {
+//             color: #adb5bd;
+//             &.active {
+//                 color: $theme-color;
+//                 border-radius: 0;
+//                 background: transparent;
+//                 border-bottom: 2px solid $theme-color;
+//             }
+//         }
+//     }
+// }
+//*=== profile post tabs start ===*//
+
+
 //*=== blog profile css start ===*//
 .profile-thumble {
     padding: 60px 0;
@@ -981,61 +999,69 @@
 
 //*=== new-category css ends ===*//
 .new-category {
-    padding: 80px 0;
-    .section-header {
-        padding-bottom: 0;
-        text-align: left;
-        &::before {
-            content: none;
-        }
-        span {
-            font-size: 14px;
+    .categori-innner {
+        overflow: hidden;
+        padding: 80px 0;
+        .section-header {
+            padding-bottom: 0;
             text-align: left;
-            padding-left: 0;
+            &::before {
+                content: none;
+            }
+            span {
+                font-size: 14px;
+                text-align: left;
+                padding-left: 0;
+            }
+            h3 {
+                margin: 0;
+            }
         }
-        h3 {
-            margin: 0;
-        }
-    }
-    .section-wrapper {
-        .newcategory-slider {
-            .swiper-wrapper {
-                .swiper-slide {
-                    .category-item {
-                        .category-thumb {
-                            height: 226px;
-                            position: relative;
-                            &::after {
-                                @extend %absolute;
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                width: 100%;
-                                border-radius: 8px;
-                                background: $overlay;
-                            }
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                border-radius: 8px;
-                            }
-                            .thumb-inthumb {
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                z-index: 1;
-                                text-align: center;
-                                transform: translateX(-50%);
-                                img {
-                                    width: 60px;
-                                    height: 60px;
-                                    border-radius: 100%;
-                                    border: 2px solid $white-color;
+        .section-wrapper {
+            overflow: visible;
+            .newcategory-slider {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        &.swiper-slide-active {
+                            transform: scale(1.1);
+                            transition: 0.4s;
+                        }
+                        .category-item {
+                            .category-thumb {
+                                height: 226px;
+                                position: relative;
+                                &::after {
+                                    @extend %absolute;
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    border-radius: 8px;
+                                    background: $overlay;
                                 }
-                                h4 {
-                                    margin: 0;
-                                    color: $white-color;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 8px;
+                                }
+                                .thumb-inthumb {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    z-index: 1;
+                                    text-align: center;
+                                    transform: translateX(-50%);
+                                    img {
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 100%;
+                                        border: 2px solid $white-color;
+                                    }
+                                    h4 {
+                                        margin: 0;
+                                        color: $white-color;
+                                    }
                                 }
                             }
                         }
@@ -1069,6 +1095,46 @@
 }
 //*=== new latest blog css start ===*//
 
+//*=== profile video banner start ===*//
+.post-pageheader {
+    min-height: 250px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../assets/images/banner/profile/01.jpg);
+    &::after {
+        @extend %absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        opacity: .3;
+        background: rgba(222, 211, 211,  .60);
+    }
+    .content-position {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        .content-text {
+            text-align: center;
+            h3 {
+                margin: 0;
+                text-transform: uppercase;
+            }
+            p {
+                margin: 0;
+                text-transform: uppercase;
+                @include breakpoint (md) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+//*=== profile video banner ends  ===*//
 
 
 //?====== Blog profile page css ends  ======?//

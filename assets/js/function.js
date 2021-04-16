@@ -426,23 +426,31 @@
      // blog profile activation
      var swiper = new Swiper('.newcategory-slider', {
         slidesPerView: 2,
-        spaceBetween: 10,
+        spaceBetween: 30,
+        centeredSlides : true,
+        grabCursor: true,
+        loop: true,
         navigation: {
             nextEl: '.new-button-next',
             prevEl: '.new-button-prev',
         },
         breakpoints: {
             640: {
-                slidesPerView: 2,
+                slidesPerView: 3,
             },
             768: {
                 slidesPerView: 4,
             },
             1024: {
-                slidesPerView: 7,
+                slidesPerView: 5,
             },
         }
     });
+
+    //ui tabs activation
+    $( function() {
+        $( "#tabs" ).tabs();
+    } );
 
 
 })(jQuery);
