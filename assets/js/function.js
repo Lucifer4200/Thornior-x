@@ -447,6 +447,25 @@
         }
     });
 
+    // setup blog activation
+    var swiper = new Swiper('.setup-slider', {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        loop: true,
+        navigation: {
+            nextEl: '.latest-button-next',
+            prevEl: '.latest-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 4,
+            }
+        }
+    });
+
     //ui tabs activation
     $( function() {
         $( "#tabs" ).tabs();
