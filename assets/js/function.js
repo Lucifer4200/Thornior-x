@@ -449,7 +449,7 @@
 
     // setup blog activation
     var swiper = new Swiper('.setup-slider', {
-        slidesPerView: 2,
+        slidesPerView: 1.5,
         spaceBetween: 15,
         loop: true,
         navigation: {
@@ -458,11 +458,14 @@
         },
         breakpoints: {
             640: {
-                slidesPerView: 3,
+                slidesPerView: 2,
             },
             768: {
+                slidesPerView: 3,
+            },
+            1100: {
                 slidesPerView: 4,
-            }
+            },
         }
     });
 

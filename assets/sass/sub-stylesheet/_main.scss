@@ -1251,3 +1251,416 @@
 
 //?====== Blog profile page css ends  ======?//
 
+
+//?==== blogger landing page css start ====?//
+
+//*====== landing page css start =======*//
+.blogger-area {
+    .section-wrapper {
+        .blogger-page-header {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../../assets/images/banner/page-header/01.jpg);
+            &::after {
+                @extend %absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $overlay;
+            }
+            .header-content {
+                position: relative;
+                z-index: 11;
+                padding: 30px 15px 30px 15px;
+                @include breakpoint (sm) {
+                    padding: 30px 0 30px 40px;
+                }
+                span {
+                    color: $white-color;
+                    &.update {
+                        display: block;
+                    }
+                }
+                h3 {
+                    margin: 0;
+                    color: $white-color;
+                    line-height: 1;
+                }
+                button.btn {
+                    margin-top: 20px;
+                    background: $white-color;
+                    span {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+//*====== landing page css ends  =======*//
+
+//*==== setup-blog area css start ====*//
+.setup-blog {
+    padding: 30px 15px 0 15px;
+    @include breakpoint (sm) {
+        padding: 30px 0 0 40px;
+    }
+    .section-header {
+        text-align: left;
+        margin-bottom: 0;
+        &::before {
+            content: none;
+        }
+        span {
+            padding-left: 0;
+        }
+        .slider-arrow {
+            top: 22px;
+            .prev, .next {
+                background: transparent;
+                border: 1px solid $theme-color;
+                i {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    .section-wrapper {
+        position: relative;
+        overflow: visible;
+        .setup-slider {
+            padding: 25px 0;
+            overflow: hidden;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .setup-item {
+                        @extend %flex;
+                        align-items: center;
+                        padding: 10px;
+                        @extend %shadow;
+                        border-radius: 5px;
+                        background: $white-color;
+                        .item-left {
+                            i {
+                                font-size: 30px;
+                            }
+                        }
+                        .item-right {
+                            padding-left: 12px;
+                            h5 {
+                                margin: 0;
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .setup-item {
+            @extend %flex;
+            align-items: center;
+            padding: 10px;
+            @extend %shadow;
+            border-radius: 5px;
+            background: $white-color;
+            .item-left {
+                width: 20%;
+                i {
+                    font-size: 30px;
+                }
+            }
+            .item-right {
+                width: calc(100% - 20%);
+                padding-left: 12px;
+                h5 {
+                    margin: 0;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}
+//*==== setup-blog area css ends  ====*//
+
+//*==== blog-libarary css start ====*//
+.blog-libarary {
+    padding: 0 15px 30px 15px;
+    @include breakpoint (sm) {
+        padding: 0 0 30px 30px;
+    }
+    .section-header {
+        &::before {
+            content: none;
+        }
+    }
+    .section-wrapper {
+        overflow: visible;
+        .blog-item {
+            padding: 15px;
+            @extend %shadow;
+            border-radius: 5px;
+            position: relative;
+            background: $white-color;
+            &:hover {
+                .hover-content {
+                    opacity: 1;
+                    transform: translate(-50%, -50%)scale(1.1);
+                }
+            }
+            .item-content {
+                .cato-content {
+                    @extend %flex;
+                    padding: 10px 0;
+                    justify-content: space-between;
+                    span {
+                        &.cat-btn {
+                            font-size: 12px;
+                            padding: 2.5px 10px;
+                            border-radius: 3px;
+                            background: silver;
+                        }
+                    }
+                }
+            }
+            .hover-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+                transform: translate(-50%, -50%)scale(0);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+//*==== blog-libarary css ends  ====*//
+
+//*=== commets wizard css start ===*//
+.blog-wizard {
+    padding: 40px 15px 40px 15px;
+    @include breakpoint (sm) {
+        padding: 40px 0 40px 30px;
+    }
+    @include breakpoint (lg) {
+        padding: 40px 0;
+    }
+    .wizard-title {
+        @extend %flex;
+        padding-bottom: 12px;
+        align-items: center;
+        h4 {
+            margin: 0;
+        }
+        a {
+            font-size: 14px;
+            padding-left: 12px;
+            text-decoration: none;
+        }
+    }
+    .wizard-body {
+        .comments-reply {
+            ul.reply-list {
+                padding: 0;
+                margin: 0;
+                li {
+                    @extend %flex;
+                    width: 100%;
+                    margin-top: 12px;
+                    .repl-thumb {
+                        width: 20%;
+                        img {
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 100%;
+                        }
+                    }
+                    .repl-text {
+                        padding-left: 8px;
+                        width: calc(100% - 20%);
+                        h6 {
+                            margin: 0;
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 12px;
+                        }
+                        span {
+                            i {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .blog-item {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            li {
+                width: 100%;
+                @extend %flex;
+                align-items: flex-start;
+                .blog-thumb {
+                    width: 20%;
+                    img {
+                        height: 60px;
+                        width: 60px;
+                    }
+                }
+                .blog-text {
+                    padding-left: 8px;
+                    width: calc(100% - 20%);
+                    h6 {
+                        margin: 0;
+                    }
+                    .blog-timeline {
+                        padding: 0;
+                        .time-line {
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== commets wizard css start ===*//
+
+//?==== blogger landing page css start ====?//
+
+//?==== blogger overview page css start ====?//
+
+//*=== overview item css start ===*//
+.overview-blogger {
+    padding: 40px 20px;
+    .section-header {
+        &::before {
+            content: none;
+        }
+    }
+    .section-wrapper {
+        #tabs {
+            #tabs-1 {
+                .published-table {
+                    .table-responsive {
+                        table.table {
+                            min-width: 710px;
+                            tbody {
+                                tr {
+                                    th {
+                                        img {
+                                            height: 50px;
+                                            width: 60px;
+                                        }
+                                    }
+                                    td {
+                                        .publis-text {
+                                            h6 {
+                                                margin: 0;
+                                                line-height: 1;
+                                            }
+                                            span {
+                                                font-size: 12px;
+                                            }
+                                        }
+                                        .publis-date {
+                                            @extend %flex;
+                                            align-items: flex-start;
+                                            i {
+                                                font-size: 32px;
+                                            }
+                                            .des-text {
+                                                padding-left: 8px;
+                                                span {
+                                                    font-size: 14px;
+                                                }
+                                                p {
+                                                    margin: 0;
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
+                                        .publis-btn {
+                                            @extend %flex;
+                                            button.btn {
+                                                display: inline-flex;
+                                                &.edit-btn {
+                                                    margin-right: 10px;
+                                                    background: #aaa;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== overview item css ends  ===*//
+
+//?==== blogger overview page css start ====?//
+
+
+//?==== blogger profile page css start ====?//
+
+//*=== blogger-profile css start ===*//
+.blogger-profile {
+    padding: 40px 0;
+    .section-header {
+        &::before {
+            content: none;
+        }
+        h3 {
+            i {
+                font-size: 25px;
+            }
+        }
+    }
+    .section-wrapper {
+        .profiler-thumble {
+            text-align: center;
+            padding-bottom: 25px;
+            img {
+                height: 120px;
+                width: 120px;
+                border-radius: 100%;
+            }
+            .thumb-title{
+                h6 {
+                    margin: 0;
+                    padding-top: 12px;
+                }
+            }
+        }
+        .nav {
+            align-content: center;
+            button.nav-link {
+                border-radius: 0;
+                text-align: left;
+                display: inline-block;
+                &.active {
+                    color: $theme-color;
+                    border-left: 3px solid $theme-color;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+//*=== blogger-profile css ends  ===*//
+
+//?==== blogger profile page css start ====?//
+
+
+
+
+

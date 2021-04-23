@@ -570,15 +570,15 @@ form button.custom-btn {
   border-radius: 5px; }
 
 /*======= all scrollbar css =====*/
-.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .main-content .content-right .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount {
+.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount, .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .blog-wizard .wizard-title, .blog-wizard .wizard-body .comments-reply ul.reply-list li, .blog-wizard .wizard-body .blog-item li, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn {
   display: flex;
   flex-wrap: wrap; }
 
-.section-header::before, .main-content .vertical-sidebar .sidebar-content .seller-thumb .text-thumb span::before, .main-content .vertical-sidebar .sidebar-content .sidebar-menu ul.menu-list li a.active::before, .main-content .content-right .blogger-area .section-wrapper .blogger-page-header::after, .page-header.style-one .header-content h2::before, .page-header.style-one .header-content h2::after, .video-banner .section-wrapper .blog-video-slider .swiper-wrapper .swiper-slide .video-thumb::after, .blog-area .section-wrapper .sidebar-widget .widget-rec-post h4::after, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post h4::after, .about-area .section-wrapper .about-thumb .follow-ours .follow-text p::after, .blog-card .section-wrapper .card .card-text h4::after, .category-slider .section-wrapper .category-wrapper .slide-header h4::after, .explore-creator::before, .new-category .categori-innner .section-wrapper .newcategory-slider .swiper-wrapper .swiper-slide .category-item .category-thumb::after, .post-pageheader::after {
+.section-header::before, .main-content .vertical-sidebar .sidebar-content .seller-thumb .text-thumb span::before, .main-content .vertical-sidebar .sidebar-content .sidebar-menu ul.menu-list li a.active::before, .page-header.style-one .header-content h2::before, .page-header.style-one .header-content h2::after, .video-banner .section-wrapper .blog-video-slider .swiper-wrapper .swiper-slide .video-thumb::after, .blog-area .section-wrapper .sidebar-widget .widget-rec-post h4::after, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post h4::after, .about-area .section-wrapper .about-thumb .follow-ours .follow-text p::after, .blog-card .section-wrapper .card .card-text h4::after, .category-slider .section-wrapper .category-wrapper .slide-header h4::after, .explore-creator::before, .new-category .categori-innner .section-wrapper .newcategory-slider .swiper-wrapper .swiper-slide .category-item .category-thumb::after, .post-pageheader::after, .blogger-area .section-wrapper .blogger-page-header::after {
   position: absolute;
   content: ''; }
 
-.main-content .content-right .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .main-content .content-right .blog-libarary .section-wrapper .blog-item, .about-contact .section-wrapper .about-form {
+.about-contact .section-wrapper .about-form, .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item {
   box-shadow: 0 5px 10px 0 rgba(55, 70, 66, 0.12); }
 
 .btn-facebook {
@@ -885,6 +885,7 @@ header .header-main .header-item.style-one .header-bottom {
     top: 0;
     width: 250px;
     height: 100vh;
+    overflow-y: auto;
     background: #fff;
     border-right: 1px solid #ececec;
     z-index: 111;
@@ -961,7 +962,7 @@ header .header-main .header-item.style-one .header-bottom {
                 left: 0;
                 height: 100%;
                 width: 5px;
-                background: green; }
+                background: #000; }
   .main-content .content-right {
     width: 100%;
     margin-left: 0;
@@ -1010,7 +1011,7 @@ header .header-main .header-item.style-one .header-bottom {
               opacity: 0;
               transform: translateY(35px);
               background: #000;
-              z-index: 9;
+              z-index: 111;
               transition: all 0.3s ease-in-out; } }
           .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list li {
             margin-right: 10px; }
@@ -1041,97 +1042,6 @@ header .header-main .header-item.style-one .header-bottom {
           color: #000;
           font-size: 30px;
           cursor: pointer; }
-    .main-content .content-right .blogger-area .section-wrapper .blogger-page-header {
-      position: relative;
-      background-size: cover;
-      background-position: center;
-      background-image: url(../../assets/images/banner/page-header/01.jpg); }
-      .main-content .content-right .blogger-area .section-wrapper .blogger-page-header::after {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.6); }
-      .main-content .content-right .blogger-area .section-wrapper .blogger-page-header .header-content {
-        position: relative;
-        z-index: 11;
-        padding: 30px 0 30px 40px; }
-        .main-content .content-right .blogger-area .section-wrapper .blogger-page-header .header-content span {
-          color: #fff; }
-          .main-content .content-right .blogger-area .section-wrapper .blogger-page-header .header-content span.update {
-            display: block; }
-        .main-content .content-right .blogger-area .section-wrapper .blogger-page-header .header-content h3 {
-          margin: 0;
-          color: #fff;
-          line-height: 1; }
-        .main-content .content-right .blogger-area .section-wrapper .blogger-page-header .header-content button.btn {
-          margin-top: 20px;
-          background: #fff; }
-          .main-content .content-right .blogger-area .section-wrapper .blogger-page-header .header-content button.btn span {
-            color: #000; }
-    .main-content .content-right .setup-blog {
-      padding: 30px 0 0 40px; }
-      .main-content .content-right .setup-blog .section-header {
-        text-align: left;
-        margin-bottom: 0; }
-        .main-content .content-right .setup-blog .section-header::before {
-          content: none; }
-        .main-content .content-right .setup-blog .section-header span {
-          padding-left: 0; }
-        .main-content .content-right .setup-blog .section-header .slider-arrow {
-          top: 22px; }
-          .main-content .content-right .setup-blog .section-header .slider-arrow .prev, .main-content .content-right .setup-blog .section-header .slider-arrow .next {
-            background: transparent;
-            border: 1px solid #000; }
-            .main-content .content-right .setup-blog .section-header .slider-arrow .prev i, .main-content .content-right .setup-blog .section-header .slider-arrow .next i {
-              color: #000; }
-      .main-content .content-right .setup-blog .section-wrapper {
-        position: relative;
-        overflow: visible; }
-        .main-content .content-right .setup-blog .section-wrapper .setup-slider {
-          padding: 25px 0;
-          overflow: hidden; }
-          .main-content .content-right .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item {
-            align-items: center;
-            padding: 10px;
-            border-radius: 5px;
-            background: #fff; }
-            .main-content .content-right .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item .item-left i {
-              font-size: 30px; }
-            .main-content .content-right .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item .item-right {
-              padding-left: 12px; }
-              .main-content .content-right .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item .item-right h5 {
-                margin: 0;
-                line-height: 1.2; }
-    .main-content .content-right .blog-libarary {
-      padding: 0 0 30px 30px; }
-      .main-content .content-right .blog-libarary .section-header::before {
-        content: none; }
-      .main-content .content-right .blog-libarary .section-wrapper {
-        overflow: visible; }
-        .main-content .content-right .blog-libarary .section-wrapper .blog-item {
-          padding: 15px;
-          border-radius: 5px;
-          position: relative;
-          background: #fff; }
-          .main-content .content-right .blog-libarary .section-wrapper .blog-item:hover .hover-content {
-            opacity: 1;
-            transform: translate(-50%, -50%) scale(1.1); }
-          .main-content .content-right .blog-libarary .section-wrapper .blog-item .item-content .cato-content {
-            padding: 10px 0;
-            justify-content: space-between; }
-            .main-content .content-right .blog-libarary .section-wrapper .blog-item .item-content .cato-content span.cat-btn {
-              font-size: 12px;
-              padding: 2.5px 10px;
-              border-radius: 3px;
-              background: silver; }
-          .main-content .content-right .blog-libarary .section-wrapper .blog-item .hover-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            opacity: 0;
-            transform: translate(-50%, -50%) scale(0);
-            transition: all 0.3s ease-in-out; }
     .main-content .content-right footer {
       padding: 20px 15px;
       background: #fff; }
@@ -2128,5 +2038,242 @@ header .header-main .header-item.style-one .header-bottom {
   padding: 80px 0; }
   .favorites-post .section-header::before {
     content: none; }
+
+.blogger-area .section-wrapper .blogger-page-header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../assets/images/banner/page-header/01.jpg); }
+  .blogger-area .section-wrapper .blogger-page-header::after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); }
+  .blogger-area .section-wrapper .blogger-page-header .header-content {
+    position: relative;
+    z-index: 11;
+    padding: 30px 15px 30px 15px; }
+    @media (min-width: 576px) {
+      .blogger-area .section-wrapper .blogger-page-header .header-content {
+        padding: 30px 0 30px 40px; } }
+    .blogger-area .section-wrapper .blogger-page-header .header-content span {
+      color: #fff; }
+      .blogger-area .section-wrapper .blogger-page-header .header-content span.update {
+        display: block; }
+    .blogger-area .section-wrapper .blogger-page-header .header-content h3 {
+      margin: 0;
+      color: #fff;
+      line-height: 1; }
+    .blogger-area .section-wrapper .blogger-page-header .header-content button.btn {
+      margin-top: 20px;
+      background: #fff; }
+      .blogger-area .section-wrapper .blogger-page-header .header-content button.btn span {
+        color: #000; }
+
+.setup-blog {
+  padding: 30px 15px 0 15px; }
+  @media (min-width: 576px) {
+    .setup-blog {
+      padding: 30px 0 0 40px; } }
+  .setup-blog .section-header {
+    text-align: left;
+    margin-bottom: 0; }
+    .setup-blog .section-header::before {
+      content: none; }
+    .setup-blog .section-header span {
+      padding-left: 0; }
+    .setup-blog .section-header .slider-arrow {
+      top: 22px; }
+      .setup-blog .section-header .slider-arrow .prev, .setup-blog .section-header .slider-arrow .next {
+        background: transparent;
+        border: 1px solid #000; }
+        .setup-blog .section-header .slider-arrow .prev i, .setup-blog .section-header .slider-arrow .next i {
+          color: #000; }
+  .setup-blog .section-wrapper {
+    position: relative;
+    overflow: visible; }
+    .setup-blog .section-wrapper .setup-slider {
+      padding: 25px 0;
+      overflow: hidden; }
+      .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item {
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        background: #fff; }
+        .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item .item-left i {
+          font-size: 30px; }
+        .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item .item-right {
+          padding-left: 12px; }
+          .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item .item-right h5 {
+            margin: 0;
+            line-height: 1.2; }
+    .setup-blog .section-wrapper .setup-item {
+      align-items: center;
+      padding: 10px;
+      border-radius: 5px;
+      background: #fff; }
+      .setup-blog .section-wrapper .setup-item .item-left {
+        width: 20%; }
+        .setup-blog .section-wrapper .setup-item .item-left i {
+          font-size: 30px; }
+      .setup-blog .section-wrapper .setup-item .item-right {
+        width: calc(100% - 20%);
+        padding-left: 12px; }
+        .setup-blog .section-wrapper .setup-item .item-right h5 {
+          margin: 0;
+          line-height: 1.2; }
+
+.blog-libarary {
+  padding: 0 15px 30px 15px; }
+  @media (min-width: 576px) {
+    .blog-libarary {
+      padding: 0 0 30px 30px; } }
+  .blog-libarary .section-header::before {
+    content: none; }
+  .blog-libarary .section-wrapper {
+    overflow: visible; }
+    .blog-libarary .section-wrapper .blog-item {
+      padding: 15px;
+      border-radius: 5px;
+      position: relative;
+      background: #fff; }
+      .blog-libarary .section-wrapper .blog-item:hover .hover-content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1); }
+      .blog-libarary .section-wrapper .blog-item .item-content .cato-content {
+        padding: 10px 0;
+        justify-content: space-between; }
+        .blog-libarary .section-wrapper .blog-item .item-content .cato-content span.cat-btn {
+          font-size: 12px;
+          padding: 2.5px 10px;
+          border-radius: 3px;
+          background: silver; }
+      .blog-libarary .section-wrapper .blog-item .hover-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+        transition: all 0.3s ease-in-out; }
+
+.blog-wizard {
+  padding: 40px 15px 40px 15px; }
+  @media (min-width: 576px) {
+    .blog-wizard {
+      padding: 40px 0 40px 30px; } }
+  @media (min-width: 992px) {
+    .blog-wizard {
+      padding: 40px 0; } }
+  .blog-wizard .wizard-title {
+    padding-bottom: 12px;
+    align-items: center; }
+    .blog-wizard .wizard-title h4 {
+      margin: 0; }
+    .blog-wizard .wizard-title a {
+      font-size: 14px;
+      padding-left: 12px;
+      text-decoration: none; }
+  .blog-wizard .wizard-body .comments-reply ul.reply-list {
+    padding: 0;
+    margin: 0; }
+    .blog-wizard .wizard-body .comments-reply ul.reply-list li {
+      width: 100%;
+      margin-top: 12px; }
+      .blog-wizard .wizard-body .comments-reply ul.reply-list li .repl-thumb {
+        width: 20%; }
+        .blog-wizard .wizard-body .comments-reply ul.reply-list li .repl-thumb img {
+          height: 40px;
+          width: 40px;
+          border-radius: 100%; }
+      .blog-wizard .wizard-body .comments-reply ul.reply-list li .repl-text {
+        padding-left: 8px;
+        width: calc(100% - 20%); }
+        .blog-wizard .wizard-body .comments-reply ul.reply-list li .repl-text h6 {
+          margin: 0; }
+        .blog-wizard .wizard-body .comments-reply ul.reply-list li .repl-text p {
+          margin: 0;
+          font-size: 12px; }
+        .blog-wizard .wizard-body .comments-reply ul.reply-list li .repl-text span i {
+          margin-right: 5px; }
+  .blog-wizard .wizard-body .blog-item {
+    padding: 0;
+    margin: 0;
+    border: 0; }
+    .blog-wizard .wizard-body .blog-item li {
+      width: 100%;
+      align-items: flex-start; }
+      .blog-wizard .wizard-body .blog-item li .blog-thumb {
+        width: 20%; }
+        .blog-wizard .wizard-body .blog-item li .blog-thumb img {
+          height: 60px;
+          width: 60px; }
+      .blog-wizard .wizard-body .blog-item li .blog-text {
+        padding-left: 8px;
+        width: calc(100% - 20%); }
+        .blog-wizard .wizard-body .blog-item li .blog-text h6 {
+          margin: 0; }
+        .blog-wizard .wizard-body .blog-item li .blog-text .blog-timeline {
+          padding: 0; }
+          .blog-wizard .wizard-body .blog-item li .blog-text .blog-timeline .time-line span {
+            font-size: 12px; }
+
+.overview-blogger {
+  padding: 40px 20px; }
+  .overview-blogger .section-header::before {
+    content: none; }
+  .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table {
+    min-width: 710px; }
+    .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr th img {
+      height: 50px;
+      width: 60px; }
+    .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-text h6 {
+      margin: 0;
+      line-height: 1; }
+    .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-text span {
+      font-size: 12px; }
+    .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date {
+      align-items: flex-start; }
+      .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date i {
+        font-size: 32px; }
+      .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date .des-text {
+        padding-left: 8px; }
+        .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date .des-text span {
+          font-size: 14px; }
+        .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date .des-text p {
+          margin: 0;
+          font-size: 12px; }
+    .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn button.btn {
+      display: inline-flex; }
+      .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn button.btn.edit-btn {
+        margin-right: 10px;
+        background: #aaa; }
+
+.blogger-profile {
+  padding: 40px 0; }
+  .blogger-profile .section-header::before {
+    content: none; }
+  .blogger-profile .section-header h3 i {
+    font-size: 25px; }
+  .blogger-profile .section-wrapper .profiler-thumble {
+    text-align: center;
+    padding-bottom: 25px; }
+    .blogger-profile .section-wrapper .profiler-thumble img {
+      height: 120px;
+      width: 120px;
+      border-radius: 100%; }
+    .blogger-profile .section-wrapper .profiler-thumble .thumb-title h6 {
+      margin: 0;
+      padding-top: 12px; }
+  .blogger-profile .section-wrapper .nav {
+    align-content: center; }
+    .blogger-profile .section-wrapper .nav button.nav-link {
+      border-radius: 0;
+      text-align: left;
+      display: inline-block; }
+      .blogger-profile .section-wrapper .nav button.nav-link.active {
+        color: #000;
+        border-left: 3px solid #000;
+        background: transparent; }
 
 /*# sourceMappingURL=style.css.map */
