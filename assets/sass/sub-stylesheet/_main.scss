@@ -1626,6 +1626,7 @@
         }
     }
     .section-wrapper {
+        overflow: visible;
         .profiler-thumble {
             text-align: center;
             padding-bottom: 25px;
@@ -1657,6 +1658,114 @@
     }
 }
 //*=== blogger-profile css ends  ===*//
+
+//*=== blogger-settings css star ===*//
+.blogger-settings {
+    padding-top: 30px;
+    @include breakpoint (lg) {
+        padding-top: 0;
+    }
+    .card {
+        padding: 12px;
+        text-align: center;
+        border: 0;
+        @extend %shadow;
+        background: $white-color;
+        .card-icon {
+            padding: 10px 0 5px;
+            i {
+                font-size: 32px;
+                opacity: .3;
+            }
+        }
+        .card-text {
+            h4 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+//*=== blogger-settings css ends  ===*//
+
+//*=== blogger notices css start ===*//
+.blogger-notices {
+    .item-title {
+        h6 {
+            margin: 0;
+        }
+    }
+    .item-content {
+        padding: 15px;
+        background: #fff;
+        margin: 15px 0;
+        @extend %shadow;
+        .item-head {
+            @extend %flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            .left {
+                h6 {
+                    margin: 0;
+                }
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+            .right {
+                label {
+                    &.switch-material {
+                        display: block!important;
+                    }
+                }
+            }
+        }
+        .item-text {
+            p {
+                margin: 0;
+                font-size: 12px;
+                max-width: 620px;
+                margin-left: 0;
+            }
+        }
+        ul {
+            margin: 0;
+            @extend %flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                margin: 5px;
+                padding: 10px 20px;
+                border-radius: 3px;
+                list-style: none;
+                -webkit-box-shadow: 0 0 10px 0 rgba(136, 136, 136, 0.1);
+                box-shadow: 0 0 10px 0 rgba(136, 136, 136, 0.49);
+            }
+            a {
+                @extend %flex;
+                justify-content: flex-start;
+                align-items: center;
+                img { 
+                    margin-right: 10px;
+                }
+                p {
+                    margin: 0;
+                    line-height: 1;
+                    font-size: 12px;
+                    span {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== blogger notices css ends  ===*//
+
 
 //?==== blogger profile page css start ====?//
 

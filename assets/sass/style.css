@@ -570,7 +570,7 @@ form button.custom-btn {
   border-radius: 5px; }
 
 /*======= all scrollbar css =====*/
-.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount, .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .blog-wizard .wizard-title, .blog-wizard .wizard-body .comments-reply ul.reply-list li, .blog-wizard .wizard-body .blog-item li, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn {
+.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount, .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .blog-wizard .wizard-title, .blog-wizard .wizard-body .comments-reply ul.reply-list li, .blog-wizard .wizard-body .blog-item li, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn, .blogger-notices .item-content .item-head, .blogger-notices .item-content ul, .blogger-notices .item-content ul a {
   display: flex;
   flex-wrap: wrap; }
 
@@ -578,7 +578,7 @@ form button.custom-btn {
   position: absolute;
   content: ''; }
 
-.about-contact .section-wrapper .about-form, .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item {
+.about-contact .section-wrapper .about-form, .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item, .blogger-settings .card, .blogger-notices .item-content {
   box-shadow: 0 5px 10px 0 rgba(55, 70, 66, 0.12); }
 
 .btn-facebook {
@@ -2255,25 +2255,92 @@ header .header-main .header-item.style-one .header-bottom {
     content: none; }
   .blogger-profile .section-header h3 i {
     font-size: 25px; }
-  .blogger-profile .section-wrapper .profiler-thumble {
+  .blogger-profile .section-wrapper {
+    overflow: visible; }
+    .blogger-profile .section-wrapper .profiler-thumble {
+      text-align: center;
+      padding-bottom: 25px; }
+      .blogger-profile .section-wrapper .profiler-thumble img {
+        height: 120px;
+        width: 120px;
+        border-radius: 100%; }
+      .blogger-profile .section-wrapper .profiler-thumble .thumb-title h6 {
+        margin: 0;
+        padding-top: 12px; }
+    .blogger-profile .section-wrapper .nav {
+      align-content: center; }
+      .blogger-profile .section-wrapper .nav button.nav-link {
+        border-radius: 0;
+        text-align: left;
+        display: inline-block; }
+        .blogger-profile .section-wrapper .nav button.nav-link.active {
+          color: #000;
+          border-left: 3px solid #000;
+          background: transparent; }
+
+.blogger-settings {
+  padding-top: 30px; }
+  @media (min-width: 992px) {
+    .blogger-settings {
+      padding-top: 0; } }
+  .blogger-settings .card {
+    padding: 12px;
     text-align: center;
-    padding-bottom: 25px; }
-    .blogger-profile .section-wrapper .profiler-thumble img {
-      height: 120px;
-      width: 120px;
-      border-radius: 100%; }
-    .blogger-profile .section-wrapper .profiler-thumble .thumb-title h6 {
+    border: 0;
+    background: #fff; }
+    .blogger-settings .card .card-icon {
+      padding: 10px 0 5px; }
+      .blogger-settings .card .card-icon i {
+        font-size: 32px;
+        opacity: .3; }
+    .blogger-settings .card .card-text h4 {
+      margin: 0; }
+    .blogger-settings .card .card-text p {
+      margin: 0; }
+
+.blogger-notices .item-title h6 {
+  margin: 0; }
+.blogger-notices .item-content {
+  padding: 15px;
+  background: #fff;
+  margin: 15px 0; }
+  .blogger-notices .item-content .item-head {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; }
+    .blogger-notices .item-content .item-head .left h6 {
+      margin: 0; }
+    .blogger-notices .item-content .item-head .left p {
       margin: 0;
-      padding-top: 12px; }
-  .blogger-profile .section-wrapper .nav {
-    align-content: center; }
-    .blogger-profile .section-wrapper .nav button.nav-link {
-      border-radius: 0;
-      text-align: left;
-      display: inline-block; }
-      .blogger-profile .section-wrapper .nav button.nav-link.active {
-        color: #000;
-        border-left: 3px solid #000;
-        background: transparent; }
+      font-size: 14px; }
+    .blogger-notices .item-content .item-head .right label.switch-material {
+      display: block !important; }
+  .blogger-notices .item-content .item-text p {
+    margin: 0;
+    font-size: 12px;
+    max-width: 620px;
+    margin-left: 0; }
+  .blogger-notices .item-content ul {
+    margin: 0;
+    justify-content: space-between;
+    align-items: center; }
+    .blogger-notices .item-content ul li {
+      margin: 5px;
+      padding: 10px 20px;
+      border-radius: 3px;
+      list-style: none;
+      -webkit-box-shadow: 0 0 10px 0 rgba(136, 136, 136, 0.1);
+      box-shadow: 0 0 10px 0 rgba(136, 136, 136, 0.49); }
+    .blogger-notices .item-content ul a {
+      justify-content: flex-start;
+      align-items: center; }
+      .blogger-notices .item-content ul a img {
+        margin-right: 10px; }
+      .blogger-notices .item-content ul a p {
+        margin: 0;
+        line-height: 1;
+        font-size: 12px; }
+        .blogger-notices .item-content ul a p span {
+          font-size: 10px; }
 
 /*# sourceMappingURL=style.css.map */
