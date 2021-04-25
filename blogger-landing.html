@@ -42,8 +42,20 @@
                     <img src="assets/images/blogger/user.png" alt="">
                 </div>
                 <div class="text-thumb">
-                    <p>Seller02</p>
-                    <span class="online-status">Online</span>
+                    <p>Natasa</p>
+                    <span class="online-status">@natasa180</span>
+                </div>
+                <div class="post-status">
+                    <ul class="status-list">
+                        <li>
+                            <strong>28</strong>
+                            <p>Posts</p>
+                        </li>
+                        <li>
+                            <strong>28</strong>
+                            <p>Posts</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="sidebar-menu">
@@ -91,17 +103,32 @@
         <div class="top-navbar">
             <div class="container-fluid p-0">
                 <div class="nav-item">
-                    <div class="nav-toggle" onclick="menuAnimation(this)">
-                        <i class="fa fa-times"></i>
-                    </div>
+                   <div class="left-menu">
+                        <div class="nav-toggle me-3" onclick="menuAnimation(this)">
+                            <i class="fa fa-times"></i>
+                        </div>
+                        <ul class="left-menulist">
+                            <li class="active">
+                                <a href="#0">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#0">Explore</a>
+                            </li>
+                        </ul>
+                   </div>
                     <div class="menu-item">
                         <ul class="item-list" id="topList">
-                            <li><span><i class="fa fa-bell"></i></span></li>
-                            <li>
-                                <a href="#0">
+                            <li><a href="#"><span><i class="fa fa-bell"></i></span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span><img src="assets/images/blogger/user.png" height="35" width="35" alt=""></span>
-                                    <span class="ml-1">Hi! seller02</span>
+                                    <span class="ml-1">Natasa</span>
                                 </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
                             </li>
                         </ul>
                         <div class="top-toggle d-block d-sm-none" onclick="topNav(this)">
@@ -129,7 +156,7 @@
                     <!-- page header ends  -->
 
                     <!-- girid layout -->
-                    <div class="row">
+                    <div class="row grid-row">
                         <div class="col-lg-9 col-12">
                             <!-- setup blog start -->
                             <section class="setup-blog">
@@ -227,57 +254,78 @@
                                     <h3>Library</h3>
                                 </div>
                                 <div class="section-wrapper">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                                            <div class="blog-item">
-                                                <div class="item-thumb">
-                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
-                                                </div>
-                                                <div class="item-content">
-                                                    <div class="cato-content">
-                                                        <span class="cat-btn">Diy</span>
-                                                        <span><i class="fas fa-ellipsis-h"></i></span>
+                                    <div id="tabs">
+                                        <ul class="mb-4">
+                                          <li><a href="#tabs-1">Overview</a></li>
+                                          <li><a href="#tabs-2">Post</a></li>
+                                          <li><a href="#tabs-3">Category</a></li>
+                                          <li><a href="#tabs-4">Videos</a></li>
+                                        </ul>
+                                        <div id="tabs-1">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                                    <div class="blog-item">
+                                                        <div class="item-thumb">
+                                                            <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <div class="cato-content">
+                                                                <span class="cat-btn">Diy</span>
+                                                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                                            </div>
+                                                            <p>7 Fun home projects to this summer</p>
+                                                        </div>
+                                                        <div class="hover-content">
+                                                            <button type="button" class="btn"><span>Edit</span></button>
+                                                        </div>
                                                     </div>
-                                                    <p>7 Fun home projects to this summer</p>
                                                 </div>
-                                                <div class="hover-content">
-                                                    <button type="button" class="btn"><span>Edit</span></button>
+                                                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4 mt-sm-0">
+                                                    <div class="blog-item">
+                                                        <div class="item-thumb">
+                                                            <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <div class="cato-content">
+                                                                <span class="cat-btn">Diy</span>
+                                                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                                            </div>
+                                                            <p>7 Fun home projects to this summer</p>
+                                                        </div>
+                                                        <div class="hover-content">
+                                                            <button type="button" class="btn"><span>Edit</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4 mt-lg-0">
+                                                    <div class="blog-item">
+                                                        <div class="item-thumb">
+                                                            <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                        </div>
+                                                        <div class="item-content">
+                                                            <div class="cato-content">
+                                                                <span class="cat-btn">Diy</span>
+                                                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                                            </div>
+                                                            <p>7 Fun home projects to this summer</p>
+                                                        </div>
+                                                        <div class="hover-content">
+                                                            <button type="button" class="btn"><span>Edit</span></button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4 mt-sm-0">
-                                            <div class="blog-item">
-                                                <div class="item-thumb">
-                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
-                                                </div>
-                                                <div class="item-content">
-                                                    <div class="cato-content">
-                                                        <span class="cat-btn">Diy</span>
-                                                        <span><i class="fas fa-ellipsis-h"></i></span>
-                                                    </div>
-                                                    <p>7 Fun home projects to this summer</p>
-                                                </div>
-                                                <div class="hover-content">
-                                                    <button type="button" class="btn"><span>Edit</span></button>
-                                                </div>
-                                            </div>
+                                        <div id="tabs-2">
+                                          <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt-4 mt-lg-0">
-                                            <div class="blog-item">
-                                                <div class="item-thumb">
-                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
-                                                </div>
-                                                <div class="item-content">
-                                                    <div class="cato-content">
-                                                        <span class="cat-btn">Diy</span>
-                                                        <span><i class="fas fa-ellipsis-h"></i></span>
-                                                    </div>
-                                                    <p>7 Fun home projects to this summer</p>
-                                                </div>
-                                                <div class="hover-content">
-                                                    <button type="button" class="btn"><span>Edit</span></button>
-                                                </div>
-                                            </div>
+                                        <div id="tabs-3">
+                                          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                          <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                                        </div>
+                                        <div id="tabs-4">
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore autem culpa sequi corporis ipsa iure provident aliquam accusamus amet ad tenetur temporibus quibusdam velit fugiat ratione laudantium consequatur fuga non omnis eius repellat quo, perspiciatis optio numquam! Tempora, maxime fugit.</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore autem culpa sequi corporis ipsa iure provident aliquam accusamus amet ad tenetur temporibus quibusdam velit fugiat ratione laudantium consequatur fuga non omnis eius repellat quo, perspiciatis optio numquam! Tempora, maxime fugit.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -410,7 +458,6 @@
             var element = document.getElementById("topList");
             element.classList.toggle("top-list");
         }
-
     </script>
 
 </body>

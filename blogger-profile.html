@@ -42,8 +42,20 @@
                     <img src="assets/images/blogger/user.png" alt="">
                 </div>
                 <div class="text-thumb">
-                    <p>Seller02</p>
-                    <span class="online-status">Online</span>
+                    <p>Natasa</p>
+                    <span class="online-status">@natasa180</span>
+                </div>
+                <div class="post-status">
+                    <ul class="status-list">
+                        <li>
+                            <strong>28</strong>
+                            <p>Posts</p>
+                        </li>
+                        <li>
+                            <strong>28</strong>
+                            <p>Posts</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="sidebar-menu">
@@ -91,17 +103,32 @@
         <div class="top-navbar">
             <div class="container-fluid p-0">
                 <div class="nav-item">
-                    <div class="nav-toggle" onclick="menuAnimation(this)">
-                        <i class="fa fa-times"></i>
-                    </div>
+                   <div class="left-menu">
+                        <div class="nav-toggle me-3" onclick="menuAnimation(this)">
+                            <i class="fa fa-times"></i>
+                        </div>
+                        <ul class="left-menulist">
+                            <li class="active">
+                                <a href="#0">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#0">Explore</a>
+                            </li>
+                        </ul>
+                   </div>
                     <div class="menu-item">
                         <ul class="item-list" id="topList">
-                            <li><span><i class="fa fa-bell"></i></span></li>
-                            <li>
-                                <a href="#0">
+                            <li><a href="#"><span><i class="fa fa-bell"></i></span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span><img src="assets/images/blogger/user.png" height="35" width="35" alt=""></span>
-                                    <span class="ml-1">Hi! seller02</span>
+                                    <span class="ml-1">Natasa</span>
                                 </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
                             </li>
                         </ul>
                         <div class="top-toggle d-block d-sm-none" onclick="topNav(this)">
@@ -166,9 +193,9 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 col-12">
-                                                        <div class="input-group mb-3">
+                                                        <div class="input-sellect mb-3">
                                                             <label for="chooseLand">Land / Region</label>
-                                                            <select name="" id="chooseLand" class="form-control">
+                                                            <select name="" id="chooseLand">
                                                                 <option value="1">Bangladesh</option>
                                                                 <option value="2">India</option>
                                                                 <option value="3">Pakistan</option>
@@ -390,7 +417,6 @@
             </div>
         </section>
         <!-- profile area ends  -->
-        
 
         <!-- footer area start -->
         <footer>

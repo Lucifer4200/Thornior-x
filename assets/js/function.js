@@ -259,7 +259,7 @@
 
     // latest blog activation
     var swiper = new Swiper('.latest-blog-slider', {
-        slidesPerView: 1,
+        slidesPerView: 1.5,
         spaceBetween: 10,
         navigation: {
             nextEl: '.latest-button-next',
@@ -307,7 +307,7 @@
 
     // thornior blog activation
     var swiper = new Swiper('.thornior-blog-slider', {
-        slidesPerView: 1,
+        slidesPerView: 1.5,
         spaceBetween: 10,
         navigation: {
             nextEl: '.thornior-button-next',
@@ -331,7 +331,7 @@
 
      // videos blog activation
      var swiper = new Swiper('.videos-blog-slider', {
-        slidesPerView: 1,
+        slidesPerView: 1.5,
         spaceBetween: 10,
         navigation: {
             nextEl: '.videos-button-next',
@@ -356,7 +356,7 @@
 
      // collabs blog activation
      var swiper = new Swiper('.collabs-blog-slider', {
-        slidesPerView: 1,
+        slidesPerView: 1.5,
         spaceBetween: 10,
         navigation: {
             nextEl: '.collabs-button-next',

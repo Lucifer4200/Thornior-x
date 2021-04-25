@@ -1302,81 +1302,86 @@
 //*====== landing page css ends  =======*//
 
 //*==== setup-blog area css start ====*//
-.setup-blog {
-    padding: 30px 15px 0 15px;
+.grid-row {
+    padding: 20px;
     @include breakpoint (sm) {
-        padding: 30px 0 0 40px;
+        padding: 30px;
     }
-    .section-header {
-        text-align: left;
-        margin-bottom: 0;
-        &::before {
-            content: none;
-        }
-        span {
-            padding-left: 0;
-        }
-        .slider-arrow {
-            top: 22px;
-            .prev, .next {
-                background: transparent;
-                border: 1px solid $theme-color;
-                i {
-                    color: $theme-color;
+    @include breakpoint (md) {
+        padding: 40px;
+    }
+    .setup-blog {
+        .section-header {
+            text-align: left;
+            margin-bottom: 0;
+            &::before {
+                content: none;
+            }
+            span {
+                padding-left: 0;
+            }
+            .slider-arrow {
+                top: 22px;
+                .prev, .next {
+                    background: transparent;
+                    border: 1px solid $theme-color;
+                    i {
+                        color: $theme-color;
+                    }
                 }
             }
         }
-    }
-    .section-wrapper {
-        position: relative;
-        overflow: visible;
-        .setup-slider {
-            padding: 25px 0;
-            overflow: hidden;
-            .swiper-wrapper {
-                .swiper-slide {
-                    .setup-item {
-                        @extend %flex;
-                        align-items: center;
-                        padding: 10px;
-                        @extend %shadow;
-                        border-radius: 5px;
-                        background: $white-color;
-                        .item-left {
-                            i {
-                                font-size: 30px;
+        .section-wrapper {
+            position: relative;
+            overflow: visible;
+            .setup-slider {
+                padding: 25px 0;
+                overflow: hidden;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        .setup-item {
+                            @extend %flex;
+                            align-items: center;
+                            padding: 10px;
+                            @extend %shadow;
+                            border-radius: 5px;
+                            background: $white-color;
+                            .item-left {
+                                i {
+                                    font-size: 30px;
+                                }
                             }
-                        }
-                        .item-right {
-                            padding-left: 12px;
-                            h5 {
-                                margin: 0;
-                                line-height: 1.2;
+                            .item-right {
+                                padding-left: 12px;
+                                h5 {
+                                    margin: 0;
+                                    line-height: 1.2;
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-        .setup-item {
-            @extend %flex;
-            align-items: center;
-            padding: 10px;
-            @extend %shadow;
-            border-radius: 5px;
-            background: $white-color;
-            .item-left {
-                width: 20%;
-                i {
-                    font-size: 30px;
+            .setup-item {
+                @extend %flex;
+                align-items: center;
+                padding: 10px;
+                @extend %shadow;
+                border-radius: 5px;
+                background: $white-color;
+                .item-left {
+                    width: 20%;
+                    i {
+                        font-size: 30px;
+                    }
                 }
-            }
-            .item-right {
-                width: calc(100% - 20%);
-                padding-left: 12px;
-                h5 {
-                    margin: 0;
-                    line-height: 1.2;
+                .item-right {
+                    width: calc(100% - 20%);
+                    padding-left: 12px;
+                    h5 {
+                        margin: 0;
+                        line-height: 1.2;
+                    }
                 }
             }
         }
@@ -1386,10 +1391,6 @@
 
 //*==== blog-libarary css start ====*//
 .blog-libarary {
-    padding: 0 15px 30px 15px;
-    @include breakpoint (sm) {
-        padding: 0 0 30px 30px;
-    }
     .section-header {
         &::before {
             content: none;
@@ -1537,7 +1538,13 @@
 
 //*=== overview item css start ===*//
 .overview-blogger {
-    padding: 40px 20px;
+    padding: 20px;
+    @include breakpoint (sm) {
+        padding: 30px;
+    }
+    @include breakpoint (md) {
+        padding: 40px;
+    }
     .section-header {
         &::before {
             content: none;
@@ -1548,6 +1555,8 @@
             #tabs-1 {
                 .published-table {
                     .table-responsive {
+                        height: 370px;
+                        overflow: auto;
                         table.table {
                             min-width: 710px;
                             tbody {
@@ -1614,7 +1623,10 @@
 
 //*=== blogger-profile css start ===*//
 .blogger-profile {
-    padding: 40px 0;
+    padding: 20px;
+    @include breakpoint (md) {
+        padding: 40px;
+    }
     .section-header {
         &::before {
             content: none;

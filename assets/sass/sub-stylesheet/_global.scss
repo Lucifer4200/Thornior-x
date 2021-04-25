@@ -539,7 +539,7 @@ button.btn {
 form {
     .input-group {
         position: relative;
-        input, select {
+        input {
             border-radius: 3px!important;
             &.form-control {
                 width: 100%;
@@ -550,7 +550,7 @@ form {
                 transition: all 0.3s ease-in-out;
                 &::placeholder {
                     font-size: 12px;
-                    color: $theme-color;
+                    color: silver;
                     transition: all 0.3s ease-in-out;
                 }
                 &:focus {
@@ -613,13 +613,18 @@ form {
                 }
             }
         }
-        .controls {
-            select {
-                height: 40px;
-                border: 1px solid $theme-color;
-            }
+    }
+    .input-sellect {
+        label {
+            display: block;
         }
-
+        select {
+            height: 40px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 3px;
+            border: 1px solid $theme-color;
+        }
     }
     button {
         &.custom-btn {
