@@ -1779,7 +1779,228 @@
 //*=== blogger notices css ends  ===*//
 
 
-//?==== blogger profile page css start ====?//
+//?==== blogger profile page css ends  ====?//
+
+
+//?==== blogger admin page css start ====?//
+
+//*=== admin css start ===*//
+.blogger-admin {
+    padding: 20px;
+    background: #f8f9fa;
+    @include breakpoint (sm) {
+        padding: 30px;
+    }
+    @include breakpoint (md) {
+        padding: 40px;
+    }
+    .section-wrapper {
+        overflow: visible;
+        .bloger-card {
+            padding: 15px;
+            @extend %shadow;
+            border-radius: 5px;
+            background: $white-color;
+            .blogs-header {
+                @extend %flex;
+                padding-bottom: 12px;
+                justify-content: space-between;
+                .active-status {
+                    h4 {
+                        margin: 0;
+                        line-height: 1;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+                .view-more {
+                    a {
+                        font-size: 12px;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .blogs-body {
+                .blogger-list {
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    @extend %flex;
+                    list-style: none;
+                    align-items: center;
+                    justify-content: flex-start;
+                    @include breakpoint (lg) {
+                        justify-content: space-between;
+                    }
+                    li {
+                        margin: 5px;
+                        text-align: center;
+                        .list-thumb {
+                            position: relative;
+                            &::after {
+                                @extend %absolute;
+                                top: 10px;
+                                right: 10px;
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 100%;
+                                background: green;
+                            }
+                            img {
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 100%;
+                            }
+                        }
+                        .list-text {
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .card {
+                    padding: 12px;
+                    .card-thumb {
+                        img {
+                            border-radius: 3px 3px 0 0;
+                        }
+                    }
+                    .card-text {
+                        padding-top: 12px;
+                        p {
+                            margin: 0;
+                        }
+                        h6 {
+                            margin: 0;
+                            padding-bottom: 12px
+                        }
+                        .text-footer {
+                            @extend %flex;
+                            .fot-thumb {
+                                img {
+                                    height: 30px;
+                                    width: 30px;
+                                    border-radius: 100%;
+                                }
+                            }
+                            .fot-text {
+                                padding-left: 8px;
+                                h6 {
+                                    margin: 0;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .add-list {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    li {
+                        margin-bottom: 12px;
+                        &:last-child {
+                            margin-bottom: 0
+                        }
+                        .add-item {
+                            @extend %flex;
+                            align-items: center;
+                            @extend %shadow;
+                            padding: 10px;
+                            border-radius: 5px;
+                            background: #f9fafb;
+                            justify-content: space-between;  
+                            &.active {
+                                background: $white-color;
+                            }
+                            .item-left {
+                                @extend %flex;
+                                .item-thumb {
+                                    img {
+                                        height: 40px;
+                                        width: 60px;
+                                    }
+                                }
+                                .item-text {
+                                    padding-left: 10px;
+                                    span {
+                                        font-size: 12px;
+                                    }
+                                    h6 {
+                                        margin: 0;
+                                        line-height: 1;
+                                    }
+                                }
+                            }
+                            .item-middle {
+                                span {
+                                    font-size: 12px;
+                                    i {
+                                        font-size: 16px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                            .item-right {
+                                i {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .blogeractive-item {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    li {
+                        @extend %flex;
+                        width: 100%;
+                        margin-bottom: 12px;
+                        padding-bottom: 10px;
+                        align-items: center;
+                        border-bottom: 1px solid $border-color;
+                        &:last-child {
+                            margin-bottom: 0;
+                            padding-bottom: 0;
+                            border-bottom: 0;
+                        }
+                        .item-thumb {
+                            width: 20%;
+                            img {
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 100%;
+                            }
+                        }
+                        .item-text {
+                            width: calc(100% - 20%);
+                            h6 {
+                                margin: 0;
+                                font-size: 14px;
+                                line-height: 1;
+                                span {
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                }
+                            }
+                            span {
+                                font-size: 12px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== admin css ends  ===*//
+
+//?==== blogger admin page css ends  ====?//
+
 
 
 
