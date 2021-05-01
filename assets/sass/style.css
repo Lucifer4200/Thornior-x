@@ -575,7 +575,7 @@ form button.custom-btn {
   border-radius: 5px; }
 
 /*======= all scrollbar css =====*/
-.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb .post-status ul.status-list, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .left-menu, .main-content .content-right .top-navbar .nav-item .left-menu ul.left-menulist, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount, .grid-row .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .grid-row .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .blog-wizard .wizard-title, .blog-wizard .wizard-body .comments-reply ul.reply-list li, .blog-wizard .wizard-body .blog-item li, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn, .blogger-notices .item-content .item-head, .blogger-notices .item-content ul, .blogger-notices .item-content ul a, .blogger-admin .section-wrapper .bloger-card .blogs-header, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogger-list, .blogger-admin .section-wrapper .bloger-card .blogs-body .card .card-text .text-footer, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item .item-left, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogeractive-item li {
+.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb .post-status ul.status-list, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .left-menu, .main-content .content-right .top-navbar .nav-item .left-menu ul.left-menulist, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount, .grid-row .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .grid-row .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .blog-wizard .wizard-title, .blog-wizard .wizard-body .comments-reply ul.reply-list li, .blog-wizard .wizard-body .blog-item li, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn, .blogger-notices .item-content .item-head, .blogger-notices .item-content ul, .blogger-notices .item-content ul a, .blogger-admin .section-wrapper .bloger-card .blogs-header, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogger-list, .blogger-admin .section-wrapper .bloger-card .blogs-body .card .card-text .text-footer, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item .item-left, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogeractive-item li, .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td .table-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-titel, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item {
   display: flex;
   flex-wrap: wrap; }
 
@@ -2547,5 +2547,85 @@ header .header-main .header-item.style-one .header-bottom {
                 font-weight: 400; }
             .blogger-admin .section-wrapper .bloger-card .blogs-body .blogeractive-item li .item-text span {
               font-size: 12px; }
+      .blogger-admin .section-wrapper .bloger-card .blogs-body table thead tr th {
+        font-size: 12px;
+        font-weight: bold; }
+      .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td {
+        font-size: 10px; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td span.web {
+          max-width: 70%;
+          font-size: 10px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td span.publis {
+          font-size: 10px;
+          color: #44ec9f; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td .table-item {
+          align-items: center; }
+          .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td .table-item .item-thumb img {
+            height: 30px;
+            width: 30px;
+            border-radius: 100%; }
+          .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td .table-item .item-text {
+            padding-left: 5px; }
+            .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td .table-item .item-text h6 {
+              margin: 0;
+              font-weight: 500;
+              font-size: 10px; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td.dropdown a::after {
+          content: none; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td.dropdown .dropdown-menu a.dropdown-item {
+          font-size: 10px; }
+      .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-titel {
+        padding-bottom: 12px;
+        justify-content: space-between; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-titel h6 {
+          margin: 0;
+          font-size: 12px; }
+      .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item {
+        padding: 15px 0;
+        text-align: left;
+        justify-content: space-between; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item .item-thumb img {
+          height: 30px;
+          width: 30px;
+          border-radius: 100%; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item .item-text h6 {
+          margin: 0;
+          font-weight: 1;
+          font-size: 10px; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item .item-text p {
+          margin: 0;
+          font-size: 10px; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item .item-text span {
+          font-size: 10px; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item .item-link a {
+          line-height: 1;
+          padding: 0 10px 4px;
+          text-decoration: none;
+          background: silver; }
+          .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item .item-link a span {
+            font-size: 10px;
+            color: #fff; }
+          .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item .item-link a.active {
+            background: #000; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item.style-one {
+          justify-content: flex-start; }
+          .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item.style-one .item-text {
+            padding-left: 12px; }
+          .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item.style-one .item-link {
+            padding-left: 12px; }
+      .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-create {
+        text-align: center; }
+        .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-create a span {
+          font-size: 12px; }
+          .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-create a span i {
+            height: 30px;
+            width: 30px;
+            color: #fff;
+            line-height: 30px;
+            border-radius: 3px;
+            background: #000; }
 
 /*# sourceMappingURL=style.css.map */

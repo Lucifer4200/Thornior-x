@@ -1993,6 +1993,149 @@
                         }
                     }
                 }
+                table {
+                    thead {
+                        tr {
+                            th {
+                                font-size: 12px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                font-size: 10px;
+                                span {
+                                    &.web {
+                                        max-width: 70%;
+                                        font-size: 10px;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    }
+                                    &.publis {
+                                        font-size: 10px;
+                                        color: #44ec9f;
+                                    }
+                                }
+                                .table-item {
+                                    @extend %flex;
+                                    align-items: center;
+                                    .item-thumb {
+                                        img {
+                                            height: 30px;
+                                            width: 30px;
+                                            border-radius: 100%;
+                                        }
+                                    }
+                                    .item-text {
+                                        padding-left: 5px;
+                                        h6 {
+                                            margin: 0;
+                                            font-weight: 500;
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                                &.dropdown {
+                                    a {
+                                        &::after {
+                                            content: none;
+                                        }
+                                    }
+                                    .dropdown-menu {
+                                        a.dropdown-item {
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .crate-account  {
+                    .ac-content {
+                        .left-titel {
+                            @extend %flex;
+                            padding-bottom: 12px;
+                            justify-content: space-between;
+                            h6 {
+                                margin: 0;
+                                font-size: 12px;
+                            }
+                        }
+                        .left-body {
+                            .ac-item {
+                                @extend %flex;
+                                padding: 15px 0;
+                                text-align: left;
+                                justify-content: space-between;
+                                .item-thumb {
+                                    img {
+                                        height: 30px;
+                                        width: 30px;
+                                        border-radius: 100%;
+                                    }
+                                }
+                                .item-text {
+                                    h6 {
+                                        margin: 0;
+                                        font-weight: 1;
+                                        font-size: 10px;
+                                    }
+                                    p {
+                                        margin: 0;
+                                        font-size: 10px;
+                                    }
+                                    span {
+                                        font-size: 10px;
+                                    }
+                                }
+                                .item-link {
+                                    a {
+                                        line-height: 1;
+                                        padding: 0 10px 4px;
+                                        text-decoration: none;
+                                        background: silver;
+                                        span {
+                                            font-size: 10px;
+                                            color: $white-color;
+                                        }
+                                        &.active {
+                                            background: #000;
+                                        }
+                                    }
+                                }
+                                &.style-one {
+                                    justify-content: flex-start;
+                                    .item-text {
+                                        padding-left: 12px;
+                                    }
+                                    .item-link {
+                                        padding-left: 12px;
+                                    }
+                                }
+                            }
+                            .ac-create {
+                                text-align: center;
+                                a { 
+                                    span {
+                                        font-size: 12px;
+                                        i {
+                                            height: 30px;
+                                            width: 30px;
+                                            color: $white-color;
+                                            line-height: 30px;
+                                            border-radius: 3px;
+                                            background: $theme-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
