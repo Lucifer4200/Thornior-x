@@ -458,6 +458,9 @@
     &.style-one {
         .section-wrapper {
             .blog-description {
+                @include breakpoint (max-sm) {
+                    padding: 25px;
+                }
                 .blog-social {
                     left: -7%;
                     ul.social-list {
@@ -2203,6 +2206,11 @@
                         }
                     }
                 }
+                .blogger-wrapper {
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    max-height: 500px;
+                }
                 .blogger-item {
                     padding: 10px 0;
                     text-align: center;
@@ -2228,19 +2236,142 @@
                             line-height: 1.2;
                         }
                     }
+                    &.style-one {
+                        @extend %flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        &:hover {
+                            border-radius: 0 30% 30% 0;
+                            background: #f8f9fa;
+                        }
+                        .item-crount {
+                            width: 15%;
+                            span {
+                                font-size: 12px;
+                            }
+                            h6 {
+                                margin: 0;
+                            }
+                        }
+                        .item-thumb {
+                            width: 25%;
+                            img {
+                                height: 70px;
+                                width: 80px;
+                                border-radius: 3px;
+                            }
+                        }
+                        .item-text {
+                            text-align: left;
+                            padding-left: 10px;
+                            width: calc(100% - 40%);
+                            span {
+                                font-size: 10px;
+                            }
+                            h6 {
+                                margin: 0;
+                                line-height: 1;
+                                font-size: 10px;
+                                max-width: 110px
+                            }
+                            .author {
+                                @extend %flex;
+                                padding-top: 6px;
+                                .auth-thumb {
+                                    img {
+                                        height: 25px;
+                                        width: 25px;
+                                        border-radius: 100%;
+                                    }
+                                }
+                                .auth-text {
+                                    padding-left: 8px;
+                                    span {
+                                        strong {
+                                            color: $theme-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
     &.style-one {
+        padding: 0;
+        position: relative;
+        z-index: 111;
         background: $white-color;
+        @include breakpoint (sm) {
+            padding: 0;
+        }
+        @include breakpoint (md) {
+            padding: 0 40px 0 0;
+        }
         .section-wrapper {
             .bloger-card {
                 box-shadow: none;
+                padding: 20px 0;
+                @include breakpoint (sm) {
+                    padding: 30px 0;
+                }
+                @include breakpoint (md) {
+                    padding: 40px 0;
+                }
                 &.style-border {
                     border-left: 0;
                     @include breakpoint (lg) {
                         border-left: 1px solid $border-color;
+                    }
+                }
+            }
+            .blogger-menu {
+                height: 100%;
+                background: #e9ecef;
+                padding: 20px 10px 0 20px;
+                @include breakpoint (sm) {
+                    padding: 30px 10px 0 30px;
+                }
+                @include breakpoint (md) {
+                    padding: 40px 10px 0 40px;
+                }
+                .menu-list {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    .menu-header {
+                        h6 {
+                            margin: 0;
+                        }
+                    }
+                    li.accordion-item {
+                        a.accordion-button {
+                            border: 0;
+                            padding: 5px;
+                            text-decoration: none;
+                            background: transparent;
+                            &:focus {
+                                outline: 0;
+                                box-shadow: none;
+                            }
+                            &::after {
+                                width: 1rem;
+                                height: 1rem;
+                                background-size: 1rem;
+                            }
+                        }
+                        .accordion-collapse {
+                            border: 0;
+                            padding-left: 26px;
+                            a {
+                                display: block;
+                                margin: 5px 0;
+                                padding: 5px 0;
+                                text-decoration: none;
+                            }
+                        }
                     }
                 }
             }
