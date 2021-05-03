@@ -575,7 +575,7 @@ form button.custom-btn {
   border-radius: 5px; }
 
 /*======= all scrollbar css =====*/
-.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb .post-status ul.status-list, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .left-menu, .main-content .content-right .top-navbar .nav-item .left-menu ul.left-menulist, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount, .grid-row .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .grid-row .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .blog-wizard .wizard-title, .blog-wizard .wizard-body .comments-reply ul.reply-list li, .blog-wizard .wizard-body .blog-item li, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn, .blogger-notices .item-content .item-head, .blogger-notices .item-content ul, .blogger-notices .item-content ul a, .blogger-admin .section-wrapper .bloger-card .blogs-header, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogger-list, .blogger-admin .section-wrapper .bloger-card .blogs-body .card .card-text .text-footer, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item .item-left, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogeractive-item li, .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td .table-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-titel, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item, .blogger-admin .section-wrapper .bloger-card .post-header, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item.style-one, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item.style-one .item-text .author {
+.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb .post-status ul.status-list, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .left-menu, .main-content .content-right .top-navbar .nav-item .left-menu ul.left-menulist, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount, .grid-row .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .grid-row .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .blog-wizard .wizard-title, .blog-wizard .wizard-body .comments-reply ul.reply-list li, .blog-wizard .wizard-body .blog-item li, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn, .blogger-notices .item-content .item-head, .blogger-notices .item-content ul, .blogger-notices .item-content ul a, .blogger-admin .section-wrapper .bloger-card .blogs-header, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogger-list, .blogger-admin .section-wrapper .bloger-card .blogs-body .card .card-text .text-footer, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item .item-left, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogeractive-item li, .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td .table-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-titel, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item, .blogger-admin .section-wrapper .bloger-card .post-header, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item.style-one, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item.style-one .item-text .author, .blogger-admin.style-two .bloger-card .adds-header, .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item {
   display: flex;
   flex-wrap: wrap; }
 
@@ -2721,8 +2721,6 @@ header .header-main .header-item.style-one .header-bottom {
                   color: #000; }
   .blogger-admin.style-one {
     padding: 0;
-    position: relative;
-    z-index: 111;
     background: #fff; }
     @media (min-width: 576px) {
       .blogger-admin.style-one {
@@ -2780,5 +2778,143 @@ header .header-main .header-item.style-one .header-bottom {
             margin: 5px 0;
             padding: 5px 0;
             text-decoration: none; }
+  .blogger-admin.style-two .bloger-card {
+    box-shadow: none; }
+    .blogger-admin.style-two .bloger-card .adds-header {
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      justify-content: space-between; }
+      .blogger-admin.style-two .bloger-card .adds-header .active-status {
+        position: relative; }
+        .blogger-admin.style-two .bloger-card .adds-header .active-status span.placeholder {
+          height: 12px;
+          width: 25px;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          position: absolute;
+          background: silver; }
+        .blogger-admin.style-two .bloger-card .adds-header .active-status h4 {
+          margin: 0;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.9;
+          padding-left: 35px; }
+        .blogger-admin.style-two .bloger-card .adds-header .active-status.style-one span.placeholder {
+          height: 20px;
+          width: 20px; }
+        .blogger-admin.style-two .bloger-card .adds-header .active-status.style-one h4 {
+          padding-left: 30px; }
+        .blogger-admin.style-two .bloger-card .adds-header .active-status.style-two span.placeholder {
+          height: 14px;
+          width: 14px; }
+        .blogger-admin.style-two .bloger-card .adds-header .active-status.style-two h4 {
+          padding-left: 24px; }
+        .blogger-admin.style-two .bloger-card .adds-header .active-status.style-three span.placeholder {
+          height: 20px;
+          width: 25px; }
+      .blogger-admin.style-two .bloger-card .adds-header .view-more button.btn {
+        background: #fff;
+        padding: 3px 10px;
+        border: 0.5px solid #ececec; }
+        .blogger-admin.style-two .bloger-card .adds-header .view-more button.btn span {
+          font-size: 10px;
+          color: #000;
+          text-transform: capitalize; }
+        .blogger-admin.style-two .bloger-card .adds-header .view-more button.btn .btn-ripple {
+          background: rgba(51, 42, 42, 0.3); }
+    .blogger-admin.style-two .bloger-card .blogs-body ul.add-list li .add-item {
+      box-shadow: none;
+      border: 1px solid #ececec;
+      background: transparent; }
+      .blogger-admin.style-two .bloger-card .blogs-body ul.add-list li .add-item.active {
+        border: 0;
+        background: transparent; }
+      .blogger-admin.style-two .bloger-card .blogs-body ul.add-list li .add-item .item-left .item-thumb img {
+        height: 30px;
+        width: 40px; }
+      .blogger-admin.style-two .bloger-card .blogs-body ul.add-list li .add-item .item-left .item-text span {
+        font-size: 10px; }
+      .blogger-admin.style-two .bloger-card .blogs-body ul.add-list li .add-item .item-left .item-text h6 {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500; }
+      .blogger-admin.style-two .bloger-card .blogs-body ul.add-list li .add-item .item-middle span {
+        font-size: 10px; }
+        .blogger-admin.style-two .bloger-card .blogs-body ul.add-list li .add-item .item-middle span i {
+          font-size: 10px; }
+    .blogger-admin.style-two .bloger-card .blogs-body ul.add-list.style-one li .add-item .item-left .item-thumb img {
+      height: 30px;
+      width: 30px; }
+    .blogger-admin.style-two .bloger-card .blogs-body ul.add-list.style-one li .add-item .item-left .item-text span {
+      font-size: 10px; }
+    .blogger-admin.style-two .bloger-card .blogs-body ul.add-list.style-one li .add-item .item-left .item-text h6 {
+      font-size: 10px; }
+    .blogger-admin.style-two .bloger-card .blogs-body #tabs ul {
+      padding-bottom: 14px; }
+      .blogger-admin.style-two .bloger-card .blogs-body #tabs ul li a {
+        font-size: 12px; }
+    .blogger-admin.style-two .bloger-card .modal-btn {
+      text-align: center; }
+      .blogger-admin.style-two .bloger-card .modal-btn button {
+        padding: 20px 0;
+        background: transparent; }
+        .blogger-admin.style-two .bloger-card .modal-btn button span i {
+          height: 25px;
+          width: 25px;
+          line-height: 25px;
+          margin-right: 10px;
+          border-radius: 3px;
+          color: #fff;
+          background: #000; }
+    .blogger-admin.style-two .bloger-card.upcoming-add .blogs-header {
+      align-items: center; }
+      .blogger-admin.style-two .bloger-card.upcoming-add .blogs-header .active-status h4 {
+        font-size: 14px;
+        font-weight: 500; }
+      .blogger-admin.style-two .bloger-card.upcoming-add .blogs-header .view-more button {
+        font-size: 12px;
+        margin-right: 12px;
+        background: transparent; }
+    .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item {
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ececec; }
+      .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-left {
+        width: 25%;
+        padding: 7px 0;
+        text-align: center;
+        border-radius: 5px;
+        background: #ececec; }
+        .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-left span {
+          font-size: 12px; }
+        .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-left strong {
+          margin: 0;
+          font-size: 12px;
+          display: block;
+          font-weight: 500; }
+      .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-middle {
+        width: 50%;
+        padding-left: 8px; }
+        .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-middle .midd-title span {
+          font-size: 10px; }
+        .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-middle .midd-title h6 {
+          margin: 0;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: .6; }
+        .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-middle .midd-date span {
+          font-size: 10px; }
+          .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-middle .midd-date span i {
+            font-size: 10px; }
+      .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-right {
+        width: calc(100% - 75%); }
+        .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-right span {
+          font-size: 10px; }
+        .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item .item-right h6 {
+          margin: 0;
+          font-weight: 500;
+          font-size: 10px; }
 
 /*# sourceMappingURL=style.css.map */

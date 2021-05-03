@@ -2301,8 +2301,6 @@
     }
     &.style-one {
         padding: 0;
-        position: relative;
-        z-index: 111;
         background: $white-color;
         @include breakpoint (sm) {
             padding: 0;
@@ -2370,6 +2368,245 @@
                                 margin: 5px 0;
                                 padding: 5px 0;
                                 text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.style-two {
+        .bloger-card {
+            box-shadow: none;
+            .adds-header {
+                @extend %flex;
+                margin-bottom: 24px;
+                padding-bottom: 12px;
+                justify-content: space-between;
+                .active-status {
+                    position: relative;
+                    span.placeholder {
+                        height: 12px;
+                        width: 25px;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        position: absolute;
+                        background: silver;
+                    }
+                    h4 {
+                        margin: 0;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 1.9;
+                        padding-left: 35px;
+                    }
+                    &.style-one {
+                       span.placeholder {
+                           height: 20px;
+                           width: 20px;
+                       }
+                       h4 {
+                           padding-left: 30px;
+                       }
+                    }
+                    &.style-two {
+                        span.placeholder {
+                            height: 14px;
+                            width: 14px;
+                        }
+                        h4 {
+                            padding-left: 24px;
+                        }
+                    }
+                    &.style-three {
+                        span.placeholder {
+                            height: 20px;
+                            width: 25px;
+                        }
+                    }
+                }
+                .view-more {
+                    button.btn {
+                        background: $white-color;
+                        padding: 3px 10px;
+                        border: .5px solid $border-color;
+                        span {
+                            font-size: 10px;
+                            color: $theme-color;
+                            text-transform: capitalize;
+                        }
+                        .btn-ripple{
+                            background: rgba(51, 42, 42, 0.3);
+                        }
+                    }
+                }
+            }
+            .blogs-body {
+                ul.add-list {
+                    li {
+                       .add-item {
+                           box-shadow: none;
+                           border: 1px solid $border-color;
+                           background: transparent;
+                           &.active {
+                               border: 0;
+                               background: transparent;
+                           }
+                           .item-left {
+                               .item-thumb {
+                                   img {
+                                       height: 30px;
+                                       width: 40px;
+                                   }
+                               }
+                               .item-text {
+                                   span {
+                                       font-size: 10px;
+                                   }
+                                   h6 {
+                                       margin: 0;
+                                       font-size: 12px;
+                                       font-weight: 500;
+                                   }
+                               }
+                           }
+                           .item-middle {
+                               span {
+                                   font-size: 10px;
+                                   i {
+                                       font-size: 10px;
+                                   }
+                               }
+                           }
+                       } 
+                    }
+                    &.style-one {
+                        li {
+                            .add-item {
+                                .item-left {
+                                    .item-thumb {
+                                        img {
+                                            height: 30px;
+                                            width: 30px;
+                                        }
+                                    }
+                                    .item-text {
+                                        span {
+                                            font-size: 10px;
+                                        }
+                                        h6 {
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #tabs {
+                    ul {
+                        padding-bottom: 14px;
+                        li {
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-btn {
+                text-align: center;
+                button {
+                    padding: 20px 0;
+                    background: transparent;
+                    span {
+                        i {
+                            height: 25px;
+                            width: 25px;
+                            line-height: 25px;
+                            margin-right: 10px;
+                            border-radius: 3px;
+                            color: $white-color;
+                            background: $theme-color;
+                        }
+                    }
+                }
+            }
+            &.upcoming-add {
+                .blogs-header {
+                    align-items: center;
+                    .active-status {
+                        h4 {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                    .view-more {
+                        button {
+                            font-size: 12px;
+                            margin-right: 12px;
+                            background: transparent;
+                        }
+                    }
+                }
+                .blogs-body {
+                    .up-add {
+                        .add-item {
+                            @extend %flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding-bottom: 8px;
+                            border-bottom: 1px solid $border-color;
+                            .item-left {
+                                width: 25%;
+                                padding: 7px 0;
+                                text-align: center;
+                                border-radius: 5px;
+                                background: #ececec;
+                                span {
+                                    font-size: 12px;
+                                }
+                                strong {
+                                    margin: 0;
+                                    font-size: 12px;
+                                    display: block;
+                                    font-weight: 500;
+                                }
+                            }
+                            .item-middle {
+                                width: 50%;
+                                padding-left: 8px;
+                                .midd-title {
+                                    span {
+                                        font-size: 10px;
+                                    }
+                                    h6 {
+                                        margin: 0;
+                                        font-size: 12px;
+                                        font-weight: 500;
+                                        line-height: .6;
+                                    }
+                                }
+                                .midd-date {
+                                    span {
+                                        font-size: 10px;
+                                        i {
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            .item-right {
+                                width: calc(100% - 75%);
+                                span {
+                                    font-size: 10px;
+                                }
+                                h6 {
+                                    margin: 0;
+                                    font-weight: 500;
+                                    font-size: 10px;
+                                }
                             }
                         }
                     }
