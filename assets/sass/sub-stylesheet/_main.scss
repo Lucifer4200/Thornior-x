@@ -2613,6 +2613,71 @@
                 }
             }
         }
+        .ad-table {
+            .table-headerbottom {
+                @extend %flex;
+                align-items: center;
+                padding-bottom: 16px;
+                justify-content: space-between;
+                h5 {
+                    margin: 0;
+                }
+                button.btn {
+                    background: #dee2e6;
+                    span {
+                        color: $theme-color;
+                        text-transform: capitalize;
+                        i {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+            .bloger-card {
+                .table-responsive {
+                    max-height: 450px;
+                    overflow-y: scroll;
+                    .table {
+                        thead {
+                            tr {
+                                th {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    @include breakpoint (max-xl) {
+                                        min-width: 180px;
+                                    }
+                                    .ads-item {
+                                        @extend %flex;
+                                        align-items: flex-end;
+                                        .item-thumb {
+                                            img {
+                                                width: 40px;
+                                                height: 25px;
+                                            }
+                                        }
+                                        .item-title {
+                                            padding-left: 8px;
+                                            h6 {
+                                                margin: 0;
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                    span {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 //*=== admin css ends  ===*//
