@@ -2439,6 +2439,17 @@
                         .btn-ripple{
                             background: rgba(51, 42, 42, 0.3);
                         }
+                        &::after {
+                            content: none;
+                        }
+                    }
+                    ul.dropdown-menu {
+                        min-width: 6rem;
+                        li {
+                            a {
+                                font-size: 12px;
+                            }
+                        }
                     }
                 }
             }
