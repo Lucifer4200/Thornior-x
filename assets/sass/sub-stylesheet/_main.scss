@@ -2439,17 +2439,6 @@
                         .btn-ripple{
                             background: rgba(51, 42, 42, 0.3);
                         }
-                        &::after {
-                            content: none;
-                        }
-                    }
-                    ul.dropdown-menu {
-                        min-width: 6rem;
-                        li {
-                            a {
-                                font-size: 12px;
-                            }
-                        }
                     }
                 }
             }
@@ -2489,6 +2478,22 @@
                                        font-size: 10px;
                                    }
                                }
+                           }
+                           .item-right {
+                               a.dropdown-toggle {
+                                   &::after {
+                                       content: none;
+                                   }
+                               }
+                               ul.dropdown-menu {
+                                    min-width: 6rem;
+                                    li {
+                                        margin-bottom: 0;
+                                        a {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
                            }
                        } 
                     }
@@ -2692,6 +2697,210 @@
     }
 }
 //*=== admin css ends  ===*//
+
+//*=== ad modal start ===*//
+.ad-modal {
+    .modal-dialog {
+        .modal-content {
+            .close-btn {
+                position: absolute;
+                top: -15px;
+                right: -15px;
+                height: 30px;
+                width: 30px;
+                line-height: 35px;
+                text-align: center;
+                border-radius: 3px;
+                background: $white-color;
+                button {
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+            .modal-header {
+                border-bottom: 0;
+                h5.modal-title {
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                button.btn {
+                    padding: 3px 10px;
+                    background: #ececec;
+                    span {
+                        color: #000;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            .modal-banner {
+                padding: 0 10px 10px;
+                .banner-positon {
+                    padding: 30px 0;
+                    background-size: cover;
+                    background-position: center;
+                    background-image: url(../../assets/images/banner/video/01.jpg);
+                    .banner-content {
+                        padding-left: 30px;
+                        @include breakpoint (md) {
+                            padding-left: 50px;
+                        }
+                        h6 {
+                            margin: 0;
+                            text-transform: capitalize;
+                        }
+                        p {
+                            margin-left: 0;
+                            max-width: 300px;
+                        }
+                        button.btn {
+                            border: 1px solid $theme-color;
+                            background: transparent;
+                            span {
+                                color: $theme-color;
+                                &.btn-ripple {
+                                    background: $white-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-body {
+                .body-wrapper {
+                    width: 100%;
+                    @extend %flex;
+                    padding-bottom: 15px;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $border-color;
+                    .wrap-left {
+                        padding-right: 10px;
+                        width: 100%;
+                        @include breakpoint (sm) {
+                            width: calc(100% - 30%);
+                        }
+                        .ad-type {
+                            .ad-title {
+                                padding-bottom: 12px;
+                                h6 {
+                                    margin: 0;
+                                }
+                            }
+                            ul.ad-list {
+                                margin: 0;
+                                padding: 0;
+                                @extend %flex;
+                                list-style: none;
+                                padding-bottom: 10px;
+                                justify-content: space-between;
+                                li {
+                                    h6 {
+                                        margin: 0;
+                                        font-size: 14px;
+                                    }
+                                    span {
+                                        font-size: 12px
+                                    }
+                                }
+                            }
+                            .add-item {
+                                @extend %flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                .item-left {
+                                    height: 40px;
+                                    width: 40px;
+                                    line-height: 18px;
+                                    border-radius: 5px;
+                                    text-align: center;
+                                    background: silver;
+                                    span {
+                                        font-size: 12px;
+                                    }
+                                    strong {
+                                        color: $theme-color;
+                                    }
+                                }
+                                .item-middle {
+                                    .midd-title {
+                                        h6 {
+                                            margin: 0;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    .midd-date {
+                                        span {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                                .item-right {
+                                    h6 {
+                                        margin: 0;
+                                        font-size: 14px;
+                                    }
+                                    span {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wrap-right {
+                        width: 100%;
+                        padding-top: 24px;
+                        text-align: left;
+                        @include breakpoint (sm) {
+                            width: 30%;
+                            padding-top: 0;
+                            text-align: right;
+                            border-left: 1px solid $border-color;
+                        }
+                        .reminder-content {
+                            .content-title {
+                                h6 {
+                                    margin: 0;
+                                }
+                            }
+                            .content-ht {
+                                padding: 12px 0 5px;
+                                span {
+                                    height: 40px;
+                                    width: 40px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    display: inline-block;
+                                    background: silver;
+                                    border-radius: 5px;
+                                    position: relative;
+                                    i {
+                                        position: absolute;
+                                        content: "";
+                                        top: -5px;
+                                        right: -5px;
+                                        height: 15px;
+                                        width: 15px;
+                                        line-height: 15px;
+                                        text-align: center;
+                                        border-radius: 100%;
+                                        font-size: 10px;
+                                        color: $white-color;
+                                        background: $theme-color
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-footer {
+                border-top: 0;
+            }
+        }
+    }
+}
+//*=== ad modal ends  ===*//
+
 
 //?==== blogger admin page css ends  ====?//
 

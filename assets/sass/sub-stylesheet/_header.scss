@@ -298,19 +298,10 @@ header {
         top: 0;
         width: 250px;
         height: 100vh;
-        overflow-y: auto;
         background: $white-color;
         // border-right: 1px solid $border-color;
         z-index: 111;
         transition: all 0.5s ease-in-out;
-        &:hover {
-            &::-webkit-scrollbar {
-                display: block;
-            }
-        }
-        &::-webkit-scrollbar {
-            display: none;
-        }
         @include breakpoint (md) {
             width: 250px;
             left: 0;
@@ -323,6 +314,13 @@ header {
         }
         .sidebar-content {
             padding-top: 20px;
+            &:hover {
+                .sidebar-menu {
+                    &::-webkit-scrollbar {
+                        display: block;
+                    }
+                }
+            }
             .brand-logo {
                 text-align: center;
                 img {
@@ -392,6 +390,11 @@ header {
                 }
             }
             .sidebar-menu {
+                overflow-y: auto;
+                max-height: 300px;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
                 ul.menu-list {
                     margin: 0;
                     padding: 0;
