@@ -214,12 +214,6 @@ button.btn {
     @media (min-width: 576px) {
       .section-header h3 {
         font-size: 25px; } }
-  .section-header::before {
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background: #adb5bd; }
   .section-header span {
     z-index: 9;
     display: none;
@@ -579,7 +573,7 @@ form button.custom-btn {
   display: flex;
   flex-wrap: wrap; }
 
-.section-header::before, .main-content .vertical-sidebar .sidebar-content .seller-thumb .text-thumb span::before, .main-content .vertical-sidebar .sidebar-content .sidebar-menu ul.menu-list li a.active::before, .main-content .content-right .top-navbar .nav-item .left-menu ul.left-menulist li.active::before, .page-header.style-one .header-content h2::before, .page-header.style-one .header-content h2::after, .video-banner .section-wrapper .blog-video-slider .swiper-wrapper .swiper-slide .video-thumb::after, .blog-area .section-wrapper .sidebar-widget .widget-rec-post h4::after, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post h4::after, .about-area .section-wrapper .about-thumb .follow-ours .follow-text p::after, .blog-card .section-wrapper .card .card-text h4::after, .category-slider .section-wrapper .category-wrapper .slide-header h4::after, .explore-creator::before, .new-category .categori-innner .section-wrapper .newcategory-slider .swiper-wrapper .swiper-slide .category-item .category-thumb::after, .post-pageheader::after, .blogger-area .section-wrapper .blogger-page-header::after, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogger-list li .list-thumb::after {
+.main-content .vertical-sidebar .sidebar-content .seller-thumb .text-thumb span::before, .main-content .vertical-sidebar .sidebar-content .sidebar-menu ul.menu-list li a.active::before, .main-content .content-right .top-navbar .nav-item .left-menu ul.left-menulist li.active::before, .page-header.style-one .header-content h2::before, .page-header.style-one .header-content h2::after, .video-banner .section-wrapper .blog-video-slider .swiper-wrapper .swiper-slide .video-thumb::after, .blog-area .section-wrapper .sidebar-widget .widget-rec-post h4::after, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post h4::after, .about-area .section-wrapper .about-thumb .follow-ours .follow-text p::after, .blog-card .section-wrapper .card .card-text h4::after, .category-slider .section-wrapper .category-wrapper .slide-header h4::after, .explore-creator::before, .new-category .categori-innner .section-wrapper .newcategory-slider .swiper-wrapper .swiper-slide .category-item .category-thumb::after, .post-pageheader::after, .blogger-area .section-wrapper .blogger-page-header::after, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogger-list li .list-thumb::after {
   position: absolute;
   content: ''; }
 
@@ -1831,7 +1825,7 @@ header .header-main .header-item.style-one .header-bottom {
     overflow: hidden; }
     .latest-blog .section-wrapper .latest-blog-slider {
       position: relative; }
-      .latest-blog .section-wrapper .latest-blog-slider .swiper-scrollbar {
+      .latest-blog .section-wrapper .latest-blog-slider .swiper-pagination.swiper-pagination-progressbar {
         height: 3px;
         top: -21px;
         left: 0; }
@@ -1840,7 +1834,7 @@ header .header-main .header-item.style-one .header-bottom {
   overflow: hidden; }
   .viewed-blog .section-wrapper .viewed-blog-slider {
     position: relative; }
-    .viewed-blog .section-wrapper .viewed-blog-slider .swiper-scrollbar {
+    .viewed-blog .section-wrapper .viewed-blog-slider .swiper-pagination.swiper-pagination-progressbar {
       height: 3px;
       top: -21px;
       left: 0; }
@@ -1849,7 +1843,7 @@ header .header-main .header-item.style-one .header-bottom {
   overflow: hidden; }
   .thornior-blog .section-wrapper .thornior-blog-slider {
     position: relative; }
-    .thornior-blog .section-wrapper .thornior-blog-slider .swiper-scrollbar {
+    .thornior-blog .section-wrapper .thornior-blog-slider .swiper-pagination.swiper-pagination-progressbar {
       height: 3px;
       top: -21px;
       left: 0; }
@@ -1858,7 +1852,7 @@ header .header-main .header-item.style-one .header-bottom {
   overflow: hidden; }
   .videos-blog .section-wrapper .videos-blog-slider {
     position: relative; }
-    .videos-blog .section-wrapper .videos-blog-slider .swiper-scrollbar {
+    .videos-blog .section-wrapper .videos-blog-slider .swiper-pagination.swiper-pagination-progressbar {
       height: 3px;
       top: -21px;
       left: 0; }
@@ -1867,7 +1861,7 @@ header .header-main .header-item.style-one .header-bottom {
   overflow: hidden; }
   .collabs-blog .section-wrapper .collabs-blog-slider {
     position: relative; }
-    .collabs-blog .section-wrapper .collabs-blog-slider .swiper-scrollbar {
+    .collabs-blog .section-wrapper .collabs-blog-slider .swiper-pagination.swiper-pagination-progressbar {
       height: 3px;
       top: -21px;
       left: 0; }

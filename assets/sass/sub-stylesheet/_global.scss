@@ -230,14 +230,6 @@ button.btn {
             font-size: 25px;
         }
     }
-    &::before {
-        @extend %absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 100%;
-        background: #adb5bd;
-    }
     span {     
         z-index: 9;
         display: none;

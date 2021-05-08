@@ -265,8 +265,9 @@
             nextEl: '.latest-button-next',
             prevEl: '.latest-button-prev',
         },
-        scrollbar: {
-            el: '.swiper-scrollbar' 
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
         },
         breakpoints: {
             640: {
@@ -289,8 +290,9 @@
             nextEl: '.viewed-button-next',
             prevEl: '.viewed-button-prev',
         },
-        scrollbar: {
-            el: '.swiper-scrollbar' 
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
         },
         breakpoints: {
             640: {
@@ -313,8 +315,9 @@
             nextEl: '.thornior-button-next',
             prevEl: '.thornior-button-prev',
         },
-        scrollbar: {
-            el: '.swiper-scrollbar' 
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
         },
         breakpoints: {
             640: {
@@ -337,8 +340,9 @@
             nextEl: '.videos-button-next',
             prevEl: '.videos-button-prev',
         },
-        scrollbar: {
-            el: '.swiper-scrollbar' 
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
         },
         breakpoints: {
             640: {
@@ -362,8 +366,9 @@
             nextEl: '.collabs-button-next',
             prevEl: '.collabs-button-prev',
         },
-        scrollbar: {
-            el: '.swiper-scrollbar' 
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
         },
         breakpoints: {
             640: {

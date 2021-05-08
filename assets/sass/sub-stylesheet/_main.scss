@@ -800,10 +800,10 @@
         overflow: hidden;
         .latest-blog-slider {
             position: relative;
-            .swiper-scrollbar {
+            .swiper-pagination.swiper-pagination-progressbar {
                 height: 3px;
                 top: -21px;
-                left: 0
+                left: 0;
             }
         }
     }
@@ -816,11 +816,10 @@
         overflow: hidden;
         .viewed-blog-slider {
             position: relative;
-            
-            .swiper-scrollbar {
+            .swiper-pagination.swiper-pagination-progressbar {
                 height: 3px;
                 top: -21px;
-                left: 0
+                left: 0;
             }
         }
     }
@@ -833,10 +832,10 @@
         overflow: hidden;
         .thornior-blog-slider {
             position: relative;
-            .swiper-scrollbar {
+            .swiper-pagination.swiper-pagination-progressbar {
                 height: 3px;
                 top: -21px;
-                left: 0
+                left: 0;
             }
         }
     }
@@ -849,10 +848,10 @@
         overflow: hidden;
         .videos-blog-slider {
             position: relative;
-            .swiper-scrollbar {
+            .swiper-pagination.swiper-pagination-progressbar {
                 height: 3px;
                 top: -21px;
-                left: 0
+                left: 0;
             }
         }
     }
@@ -865,10 +864,10 @@
         overflow: hidden;
         .collabs-blog-slider {
             position: relative;
-            .swiper-scrollbar {
+            .swiper-pagination.swiper-pagination-progressbar {
                 height: 3px;
                 top: -21px;
-                left: 0
+                left: 0;
             }
         }
     }
