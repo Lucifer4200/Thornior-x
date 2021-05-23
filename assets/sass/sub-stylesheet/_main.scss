@@ -2904,6 +2904,229 @@
 //?==== blogger admin page css ends  ====?//
 
 
+//?==== thornior create page css start  ====?//
+
+//*=== header start ===*//
+header {
+    .header-logo {
+        padding-top: 10px 0;
+        a {
+            img {
+                height: 60px;
+            }
+        }
+    }
+}
+//*=== header ends ===*//
+
+//*=== create form start ===*//
+.create-form {
+    .section-wrapper {
+        .form-thumb {
+            padding-right: 0;
+            @include breakpoint (md) {
+                padding-right: 0;
+            }
+            img {
+                width: 100%;
+                height: 100vh;
+                border-radius: 10px;
+            }
+        }
+        .form-content {
+            padding-left: 0;
+            @include breakpoint (md) {
+                padding-left: 20px;
+            }
+            .form-wizard {
+                padding-bottom: 12px;
+                border-bottom: 1px solid $border-color;
+                form {
+                    .form-header {
+                        h4 {
+                            margin: 0;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .input-group {
+                        label {
+                            margin-bottom: 6px;
+                        }
+                    }
+                }
+            }
+            .contact-wizard {
+                width: 100%;
+                @include breakpoint (lg) {
+                    width: 50%;
+                }
+                .wizard-title {
+                    padding-top: 16px;
+                    h6 {
+                        margin: 0;
+                        padding-bottom: 6px;
+                    }
+                }
+                .wizard-acc {
+                    @extend %flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .acc-content {
+                        @extend %flex;
+                        align-items: center;
+                        .acc-thumb {
+                            img {
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 100%;
+                            }
+                        }
+                        .acc-text {
+                            padding-left: 10px;
+                            h6 {
+                                margin: 0;
+                                line-height: 1.2;
+                            }
+                            p {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .link-wizard {
+            margin-top: 30px;
+            .button-wrapper {
+                width: 100%;
+                text-align: center;
+                position: relative;
+                .label {
+                    color: #000;
+                    z-index: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 150px;
+                    background: #ececec;
+                    cursor: pointer;
+                    position: relative;
+                    border-radius: 10px;
+                    border: 1px dashed #000;
+                    text-transform:uppercase;
+                    font-size:12px;
+                }
+                #upload {
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 1;
+                    width: 100%;
+                    height: 50px;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+            .input-link {
+                button.btn {
+                    background: #ececec;
+                    span {
+                        color: #000;
+                        font-weight: 600;
+                        &.btn-ripple {
+                            background: #333;
+                        }
+                    }
+                }
+            }
+            .link-title, .price-title {
+                h6 {
+                    margin: 0;
+                    padding: 10px 0 5px;
+                }
+            }
+            .link-input, .price-input {
+                @extend %flex;
+                align-items: center;
+                input {
+                    height: 30px;
+                    padding-left: 8px;
+                    border-radius: 5px 0 0 5px;
+                    border: 1px solid $border-color;
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+                }
+                button.btn {
+                    height: 30px;
+                    border-radius: 0 5px 5px 0;
+                    span {
+                        font-size: 12px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .spot-wizard {
+            padding-top: 20px;
+            .spot-title {
+                padding-bottom: 16px;
+                h4 {
+                    margin: 0;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            .border-right {
+                @include breakpoint (md) {
+                    border-right: 1px solid $border-color;
+                }
+            }
+            .spot-list {
+                @extend %flex;
+                ul.sp-list {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    margin-bottom: 10px;
+                    @include breakpoint (xl) {
+                        margin-bottom: 0;
+                    }
+                    li {
+                        i {
+                            font-size: 20px;
+                            color: #dee2e6;
+                        }
+                        span {
+                            padding-left: 5px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .spot-btn {
+                margin: 35px 0 15px;
+                text-align: right;
+                button.btn {
+                    &.save {
+                        background: #ececec;
+                        span {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//*=== create form ends  ===*//
+
+//?==== thornior create page css ends   ====?//
+
+
 
 
 
