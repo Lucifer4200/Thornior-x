@@ -127,13 +127,13 @@
                 &::before {
                     right: 105%;
                     @include breakpoint (sm) {
-                        right: 125%;
+                        right: 85%;
                     }
                 }
                 &::after {
                     left: 105%;
                     @include breakpoint (sm) {
-                        left: 125%;
+                        left: 85%;
                     }
                 }
             }

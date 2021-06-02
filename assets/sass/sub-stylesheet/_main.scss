@@ -216,8 +216,8 @@
         .bloger-thumb {
             padding-right: 8px;
             img {
-                height: 60px;
-                width: 60px;
+                height: 40px;
+                width: 40px;
                 border-radius: 100%;
             }
         }
@@ -520,11 +520,11 @@
             }
             .follow-ours {
                 position: absolute;
-                top: 10px;
+                top: 0;
                 left: 105%;
                 height: 100%;
                 @include breakpoint (md) {
-                    top: 50px;
+                    top: 0;
                 }
                 @include breakpoint (lg) {
                     left: 102%;
@@ -536,16 +536,44 @@
                     margin: 0;
                     padding: 0;
                     list-style: none;
+                    li {
+                        margin: 10px 0;
+                        &:first-child {
+                            margin-top: 10px;
+                        }  
+                        @include breakpoint (md) {
+                            margin: 20px 0;
+                        }            
+                        a {
+                            text-decoration: none;
+                            i {
+                                height: 25px;
+                                width: 25px;
+                                line-height: 25px;
+                                text-align: center;
+                                border-radius: 100%;
+                                border: 1px solid $theme-color;
+                            }
+                        }
+                    }
                 }
                 .follow-text {
                     position: absolute;
-                    top: 65%;
-                    left: -42px;
+                    left: -35px;
                     width: 95px;
                     transform: rotate(90deg);
+                    @include breakpoint (mobile) {
+                        top: 75%;
+                    }
+                    @include breakpoint (max-mobile) {
+                        top: 85%;
+                    }
+                    @include breakpoint (max-xs) {
+                        top: 95%;
+                    }
                     @include breakpoint (sm) {
-                        top: 50%;
-                        left: -40px;
+                        top: 60%;
+                        left: -35px;
                     }
                     p {
                         margin: 0;
@@ -556,9 +584,12 @@
                             top: 50%;
                             left: 110%;
                             height: 2px;
-                            width: 70px;
+                            width: 100px;
                             transform: translateY(-50%);
                             background: #adb5bd;
+                            @include breakpoint (mobile) {
+                                width: 70px;
+                            }
                             @include breakpoint (sm) {
                                 width: 120px;
                             }
@@ -574,7 +605,7 @@
 //*=== about contact css start ===*//
 .about-contact {
     padding: 60px 0;
-    background: #f8f9fa;
+    background: #E2DED1;
     @include breakpoint (sm) {
         padding: 80px 0;
     }
@@ -1433,6 +1464,11 @@
     }
     .section-wrapper {
         overflow: visible;
+        .bloger-tabs {
+            max-height: 450px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
         .blog-item {
             padding: 15px;
             @extend %shadow;
@@ -1442,7 +1478,7 @@
             &:hover {
                 .hover-content {
                     opacity: 1;
-                    transform: translate(-50%, -50%)scale(1.1);
+                    transform: translate(-50%, -50%)scale(1);
                 }
             }
             .item-content {
@@ -1467,6 +1503,9 @@
                 opacity: 0;
                 transform: translate(-50%, -50%)scale(0);
                 transition: all 0.3s ease-in-out;
+                button.btn {
+                    display: inline-flex;
+                }
             }
         }
     }
@@ -1838,7 +1877,6 @@
             background: $white-color;
             .blogs-header {
                 @extend %flex;
-                padding-bottom: 12px;
                 justify-content: space-between;
                 .active-status {
                     h4 {
@@ -3096,6 +3134,7 @@ header {
                         margin-bottom: 0;
                     }
                     li {
+                        margin-bottom: 8px;
                         i {
                             font-size: 20px;
                             color: #dee2e6;
