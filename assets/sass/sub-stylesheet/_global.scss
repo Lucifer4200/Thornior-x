@@ -540,6 +540,7 @@ form {
                 margin-left: 0!important;
                 border: 1px solid $theme-color;
                 background: transparent;
+                border-radius: 5px !important;
                 transition: all 0.3s ease-in-out;
                 &::placeholder {
                     font-size: 12px;

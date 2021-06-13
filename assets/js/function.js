@@ -479,4 +479,11 @@
         $( "#tabs" ).tabs();
     } );
 
+    // dateTime picker activation
+    jQuery('#filter-date, #search-from-date, #search-to-date').datetimepicker();
+
+    $(function() {
+        $("#datepicker").datepicker();
+    });
+
 })(jQuery);

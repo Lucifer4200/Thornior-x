@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="assets/css/lightcase.css">
     <!-- data table css -->
     <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <!-- dataTime css -->
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.css">
     <!-- style css -->
     <link rel="stylesheet" href="assets/sass/style.css">
 
@@ -219,6 +221,69 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="col-lg-6 col-12 mt-5">
+                                    <div class="post-date bg-white">
+                                        <div class="post-titel">
+                                            <h4>Date & Time</h4>
+                                            <p>Addjust witch posts should appear in this section</p>
+                                        </div>
+                                        <div class="post-picker ps-1 ps-sm-0">
+                                            <div class="input-group d-block position-relative mb-3">
+                                                <label for="" class="text-dark mb-1">From</label>
+                                                <input type="text" class="form-control w-100 rounded" name="search-from-date" id="search-from-date"/>
+                                                <div class="input-icon position-absolute top-50 translate-middl" style="right: 10px;">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                            </div>
+                                            <div class="input-group d-block position-relative">
+                                                <label for="" class="text-dark mb-1">To</label>
+                                                <input type="text" class="form-control w-100 rounded" name="search-to-date" id="search-to-date"/>
+                                                <div class="input-icon position-absolute top-50 translate-middl" style="right: 10px;">
+                                                    <i class="fa fa-calendar"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="notification-to mt-4">
+                                            <div class="notif-title">
+                                                <h4>Notification To:</h4>
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="email" class="form-control" id="notifEmail" placeholder="Email...">
+                                                <button type="submit" class="btn"><span>Add</span></button>
+                                            </div>
+                                            <div class="notif-thumb d-flex align-items-center mt-4">
+                                                <div class="thumb-left bg-dark rounded p-2">
+                                                    <span class="text-white">SA</span>
+                                                </div>
+                                                <div class="thumb-right ps-2">
+                                                    <h6 class="m-0">Shayna alwnick</h6>
+                                                    <p class="m-0">shaynaalwick@gmail.com</p>
+                                                </div>
+                                                <div class="thumb-icon ps-4">
+                                                    <i class="fa fa-ellipsis-v"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12 mt-5">
+                                    <div class="card post-picker shadow p-3 border-0 rounded">
+                                        <div class="card-header bg-white">
+                                            <h4 class="card-title">Date</h4>
+                                        </div>
+                                        <div id="datepicker"></div>
+                                        <div class="post-title">
+                                            <h4>Time</h4>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="time" placeholder="9.00 Am">
+                                            </div>
+                                            <div class="input-btn mt-4">
+                                                <button type="submit" class="btn w-100"><span>Apply</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="spot-btn">
                                     <button type="button" class="btn save me-2"><span>Save</span></button>
                                     <button type="submit" class="btn"><span>Publish</span></button>
@@ -245,6 +310,7 @@
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/lightcase.js"></script>
     <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/jquery.datetimepicker.full.js"></script>
     <script src="assets/js/function.js"></script>
 
 </body>
