@@ -2484,6 +2484,47 @@
                 }
             }
         }
+        .crount-card {
+            margin-bottom: 20px;
+            .crount-item {
+                padding: 20px;
+                @extend %flex;
+                align-items: end;
+                border-radius: 5px;
+                justify-content: space-between;
+                background: $white-color;
+                @extend %shadow;
+                .item-left {
+                    @extend %flex;
+                    align-items: center;
+                    .left-icon {
+                        i {
+                            color: #fff;
+                            height: 30px;
+                            width: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            border-radius: 100%;
+                            background: #000;
+                        }
+                    }
+                    .left-text {
+                        padding-left: 5px;
+                        h4 {
+                            margin: 0;
+                            @include breakpoint (md) {
+                                font-size: 24px;
+                            }
+                        }
+                        h6 {
+                            margin: 0;
+                            font-size: 14px;
+                            line-height: 1;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.style-one {
         padding: 0;
@@ -2716,6 +2757,74 @@
                         }
                     }
                 }
+                .top-blog {
+                    ul.top-list {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        .list-header {
+                            padding-top: 10px;
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+                        li {
+                            padding: 5px 0;
+                            border-bottom: 1px solid $border-color;
+                            &:last-child {
+                                border-bottom: 0;
+                                padding-bottom: 0;
+                            }
+                            .list-item {
+                                @extend %flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                .item-left {
+                                    @extend %flex;
+                                    align-items: center;
+                                    .list-crount {
+                                        span {
+                                            height: 30px;
+                                            width: 30px;
+                                            line-height: 30px;
+                                            text-align: center;
+                                            border-radius: 5px;
+                                            background: #dee2e6;
+                                            display: inline-block;
+                                        }
+                                    }
+                                    .list-thumb {
+                                        padding: 0 8px;
+                                        img {
+                                            height: 30px;
+                                            width: 30px;
+                                            border-radius: 100%;
+                                        }
+                                    }
+                                    .list-text {
+                                        h6 {
+                                            margin: 0;
+                                            font-size: 12px;
+                                        }
+                                        p {
+                                            margin: 0;
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                                .item-right {
+                                    p {
+                                        margin: 0;
+                                        font-weight: 600;
+                                    }
+                                    span {
+                                        color: aqua;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .modal-btn {
                 text-align: center;
@@ -2872,6 +2981,124 @@
                                     }
                                     span {
                                         font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.style-three {
+        .section-wrapper {
+            .analytic-slider {
+                overflow: hidden;
+                position: relative;
+                padding: 30px 0;
+                .arrow {
+                    .swiper-button-next, .swiper-button-prev {
+                        position: absolute;
+                        top: 20px;
+                        right: 0;
+                        height: 20px;
+                        width: 25px;
+                        line-height: 30px;
+                        text-align: center;
+                        background: $theme-color;
+                        &::after {
+                            font-size: 10px;
+                        }
+                    }
+                    .swiper-button-prev {
+                        right: 35px;
+                        left: auto;
+                    }
+                }
+                .swiper-wrapper {
+                    .swiper-slide {
+                        &:hover {
+                            .aly-item {
+                                @extend %shadow;
+                            }
+                        }
+                        .aly-item {
+                            padding: 10px;
+                            border-radius: 5px;
+                            text-align: center;
+                            background: $white-color;
+                            .item-thumb {
+                                img {
+                                    height: 60px;
+                                    width: 60px;
+                                    border-radius: 100%;
+                                }
+                            }
+                            .item-text {
+                                padding-top: 10px;
+                                h4 {
+                                    margin: 0;
+                                    line-height: 1.2;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bloger-card {
+                .bloger-profile {
+                    @extend %flex;
+                    align-items: center;
+                    .pro-left {
+                        text-align: center;
+                        .pro-thumb {
+                            img {
+                                height: 80px;
+                                width: 80px;
+                                border-radius: 100%;
+                            }
+                        }
+                        .pro-btn {
+                            margin-top: 20px;
+                        }
+                    }
+                    .pro-right {
+                        padding-top: 30px;
+                        padding-left: 10px;
+                        @include breakpoint (sm) {
+                            padding-top: 0;
+                            padding-left: 30px;
+                        }
+                        .pro-title {
+                            h4 {
+                                margin: 0;
+                                line-height: 1;
+                            }
+                        }
+                        ul.pro-list {
+                            margin: 0;
+                            padding: 0;
+                            @extend %flex;
+                            align-items: center;
+                            li {
+                                margin: 5px 10px;
+                                list-style: none;
+                                &:first-child {
+                                    margin-left: 0;
+                                }
+                                .list-item {
+                                    text-align: center;
+                                    h6 {
+                                        margin: 0;
+                                    }
+                                    span {
+                                        font-weight: 600;
                                     }
                                 }
                             }
