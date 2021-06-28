@@ -3108,6 +3108,42 @@
             }
         }
     }
+    .bloger-iteml {
+        padding-bottom: 60px;
+        .section-wrapper {
+            .section-header {
+                h4 {
+                    margin: 0;
+                }
+            }
+            ul.blogerl-item {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                @extend  %flex;
+                align-items: center;
+                li {
+                    margin: 10px;
+                    text-align: center;
+                    .item-thumb {
+                        img {
+                            height: 80px;
+                            width: 80px;
+                            border-radius: 100%;
+                            border: 3px solid $theme-color;
+                        }
+                        
+                    }
+                    .thumb-title {
+                        h6 {
+                            margin: 0;
+                            padding-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .calendar {

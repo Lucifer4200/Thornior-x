@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- ui css -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <!-- lightcase css -->
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+    <!-- data table css -->
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/sass/style.css">
+
+    <title>Thornior</title>
+</head>
+
+<body>
+
+
+    <div class="main-content">
+
+        <!-- vertica sidebar start -->
+        <div class="vertical-sidebar" id="slideNav">
+            <div class="sidebar-content">
+                <div class="brand-logo">
+                    <img src="assets/images/logo/01.png" alt="">
+                    <span class="close-icon d-md-none float-end me-2" onclick="menuAnimation(this)">
+                        <i class="fa fa-times"></i>
+                    </span>
+                </div>
+                <div class="seller-thumb">
+                    <div class="img-thumb">
+                        <img src="assets/images/blogger/user.png" alt="">
+                    </div>
+                    <div class="text-thumb">
+                        <p>Natasa</p>
+                        <span class="online-status">@natasa180</span>
+                    </div>
+                    <div class="post-status">
+                        <ul class="status-list">
+                            <li>
+                                <strong>28</strong>
+                                <p>Posts</p>
+                            </li>
+                            <li>
+                                <strong>28</strong>
+                                <p>Posts</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu-list">
+                        <div class="menu-title">
+                            <p>Meny</p>
+                        </div>
+                        <li><a href="#0" class="active"><span><i
+                                        class="fas fa-th-large"></i></span><span>Overview</span></a></li>
+                        <li><a href="#0"><span><i class="fab fa-blogger-b"></i></span><span>Blog</span></a></li>
+                        <li><a href="#0"><span><i class="fas fa-book-open"></i></span><span>Library</span></a></li>
+                        <li class="accordion" id="accordionExample">
+                            <a href="#0" class="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="false" aria-controls="collapseOne">
+                                <span>
+                                    <i class="fas fa-hashtag"></i>
+                                </span>
+                                <span>Social Links</span>
+                            </a>
+                            <!-- <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <ul class="sub-menu">
+                                <li><a href="#"><span><i class="fa fa-circle"></i></span><span>Brands</span></a></li>
+                                <li><a href="#"><span><i class="fa fa-circle"></i></span><span>Product</span></a></li>
+                                <li><a href="#"><span><i class="fa fa-circle"></i></span><span>Categories</span></a></li>
+                            </ul>
+                        </div> -->
+                        </li>
+                        <li><a href="#0"><span><i class="fas fa-cog"></i></span><span>Settings</span></a></li>
+                        <div class="menu-title">
+                            <p>Create</p>
+                        </div>
+                        <li><a href="#0"><span><i class="fas fa-paste"></i></span><span>Post</span></a></li>
+                        <li><a href="#0"><span><i class="fas fa-list-ol"></i></span><span>Category</span></a></li>
+                        <li><a href="#0"><span><i class="fas fa-gopuram"></i></span><span>Change Template</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- vertica sidebar ends  -->
+
+
+        <!-- content-right start -->
+        <div class="content-right" id="contentWidth">
+
+            <!-- top navbar start -->
+            <div class="top-navbar">
+                <div class="container-fluid p-0">
+                    <div class="nav-item">
+                        <div class="left-menu">
+                            <div class="nav-toggle me-3" onclick="menuAnimation(this)">
+                                <i class="fa fa-times"></i>
+                            </div>
+                            <ul class="left-menulist">
+                                <li class="active">
+                                    <a href="#0">Admin</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Explore</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-item">
+                            <ul class="item-list" id="topList">
+                                <li><a href="#"><span><i class="fa fa-bell"></i></span></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><img src="assets/images/blogger/user.png" height="35" width="35"
+                                                alt=""></span>
+                                        <span class="ml-1">Natasa</span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="top-toggle d-block d-sm-none" onclick="topNav(this)">
+                                <i class="fa fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top navbar ends  -->
+
+            <!-- admin area start -->
+            <section class="blogger-admin">
+                <div class="container">
+                    <div class="section-wrapper">
+                        <!-- blog item start -->
+                        <section class="bloger-iteml">
+                            <div class="section-wrapper">
+                                <div class="section-header">
+                                    <h4>Blogs</h4>
+                                </div>
+                                <ul class="blogerl-item">
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/01.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Haker</h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/10.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Jasica</h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/02.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Slina</h6>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/03.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Morgan</h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/04.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Afrin</h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/05.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Staiter</h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/06.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Ana</h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/07.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Martin</h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/08.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Valarasi</h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-thumb">
+                                            <img src="assets/images/blog/card/09.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-title">
+                                            <h6>Mokx</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- blog item ends  -->
+
+                        <!-- recent blog slider start -->
+                        <section class="latest-blog pt-0 pb-5">
+                            <div class="section-wrapper overflow-hidden">
+                                <div class="section-header">
+                                    <h3 class="bg-transparent text-uppercase fs-5">Recently Uploaded <i
+                                            class="fa fa-angle-right"></i></h3>
+                                    <!-- slider arrow -->
+                                    <div class="slider-arrow">
+                                        <div class="latest-button-prev prev">
+                                            <i class="fa fa-angle-left"></i>
+                                        </div>
+                                        <div class="latest-button-next next">
+                                            <i class="fa fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="latest-blog-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- add progressbar -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- recent blog slider ends  -->
+
+                        <!-- thornior blog slider start -->
+                        <section class="thornior-blog pt-0 pb-5">
+                            <div class="section-wrapper overflow-hidden">
+                                <div class="section-header">
+                                    <h3 class="bg-transparent text-uppercase fs-5">Tranding <i
+                                            class="fa fa-angle-right"></i></h3>
+                                    <!-- slider arrow -->
+                                    <div class="slider-arrow">
+                                        <div class="thornior-button-prev prev">
+                                            <i class="fa fa-angle-left"></i>
+                                        </div>
+                                        <div class="thornior-button-next next">
+                                            <i class="fa fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thornior-blog-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- add progressbar -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- thornior blog slider ends  -->
+
+                        <!-- videos blog slider start -->
+                        <section class="videos-blog pb-0 pt-0">
+                            <div class="section-wrapper overflow-hidden">
+                                <div class="section-header">
+                                    <h3 class="bg-transparent text-uppercase fs-5">Videos <i
+                                            class="fa fa-angle-right"></i></h3>
+                                    <!-- slider arrow -->
+                                    <div class="slider-arrow">
+                                        <div class="videos-button-prev prev">
+                                            <i class="fa fa-angle-left"></i>
+                                        </div>
+                                        <div class="videos-button-next next">
+                                            <i class="fa fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="videos-blog-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/01.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="blog-item style-one">
+                                                <div class="item-thumb">
+                                                    <img src="assets/images/blog/latest/02.jpg" alt="">
+                                                    <div class="video-btn">
+                                                        <a href="#0">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-text">
+                                                    <div class="blog-cat">
+                                                        <span>Diy</span>
+                                                    </div>
+                                                    <h5>7 Fun home projects to do this summer</h5>
+                                                </div>
+                                                <div class="blog-timeline">
+                                                    <div class="bloger-thumb">
+                                                        <img src="assets/images/blog/latest/01.png" alt="">
+                                                    </div>
+                                                    <div class="time-line">
+                                                        <span class="border-end pe-2">Mox</span>
+                                                        <span>5 Days ago</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- add progressbar -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- videos blog slider ends  -->
+                    </div>
+                </div>
+            </section>
+            <!-- admin area ends  -->
+
+            <!-- footer area start -->
+            <footer>
+                <div class="footer-content">
+                    <p>&copy; 2021 | Thornior | All right reserved</p>
+                    <p>V 1.8</p>
+                </div>
+            </footer>
+            <!-- footer area ends  -->
+
+        </div>
+        <!-- content-right start -->
+
+    </div>
+
+
+    <!-- optional js -->
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/function.js"></script>
+
+    <script>
+        // mobile menu responsive
+        function menuAnimation(x) {
+            x.classList.toggle("change");
+            var element = document.getElementById("slideNav");
+            element.classList.toggle("navSlide");
+            var contentFade = document.getElementById("contentWidth");
+            contentFade.classList.toggle("changeWidth");
+        }
+
+        // change content width
+        function topNav(x) {
+            x.classList.toggle("change");
+            var element = document.getElementById("topList");
+            element.classList.toggle("top-list");
+        }
+
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+
+    </script>
+
+</body>
+
+</html>
