@@ -2214,6 +2214,41 @@
 
                         }
                     }
+                    &.style-one {
+                        li {
+                            .item-thumb {
+                                position: relative;
+                                img {
+                                    height: 40px;
+                                    width: 40px;
+                                }
+                                &::after {
+                                    @extend %absolute;
+                                    bottom: 0;
+                                    right: 20px;
+                                    height: 8px;
+                                    width: 8px;
+                                    border-radius: 100%;
+                                    background: #2ee42e;
+                                }
+                            }
+                        }
+                    }
+                    &.style-two {
+                        li {
+                            .item-thumb {
+                                img {
+                                    height: 40px;
+                                    width: 40px
+                                }
+                            }
+                            .item-text {
+                                @extend %flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
                 }
                 table {
                     thead {
