@@ -83,7 +83,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	font-family: $Signika;
     line-height: 1.5;
-    text-transform: capitalize;
 }
 h1>a, h2>a, h3>a, h4>a, h5>a, h6>a {
 	color: inherit;
@@ -571,7 +570,7 @@ form {
             position: absolute;
             top: 50%;
             left: 10px;
-            color: $theme-color;
+            color: silver;
             z-index: 9;
             transform: translateY(-50%);
             &.view_pass {

@@ -102,7 +102,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: "Signika", sans-serif;
   line-height: 1.5;
-  text-transform: capitalize;
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
@@ -720,7 +719,7 @@ form .input-group i {
   position: absolute;
   top: 50%;
   left: 10px;
-  color: #000;
+  color: silver;
   z-index: 9;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -911,7 +910,7 @@ form button.custom-btn {
 }
 
 /*======= all scrollbar css =====*/
-.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb .post-status ul.status-list, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .left-menu, .main-content .content-right .top-navbar .nav-item .left-menu ul.left-menulist, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount, .grid-row .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .grid-row .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .blog-wizard .wizard-title, .blog-wizard .wizard-body .comments-reply ul.reply-list li, .blog-wizard .wizard-body .blog-item li, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn, .blogger-notices .item-content .item-head, .blogger-notices .item-content ul, .blogger-notices .item-content ul a, .blogger-admin .section-wrapper .bloger-card .blogs-header, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogger-list, .blogger-admin .section-wrapper .bloger-card .blogs-body .card .card-text .text-footer, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item .item-left, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogeractive-item li, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogeractive-item.style-two li .item-text, .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td .table-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-titel, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item, .blogger-admin .section-wrapper .bloger-card .post-header, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item.style-one, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item.style-one .item-text .author, .blogger-admin .section-wrapper .crount-card .crount-item, .blogger-admin .section-wrapper .crount-card .crount-item .item-left, .blogger-admin.style-two .bloger-card .adds-header, .blogger-admin.style-two .bloger-card .blogs-body .top-blog ul.top-list li .list-item, .blogger-admin.style-two .bloger-card .blogs-body .top-blog ul.top-list li .list-item .item-left, .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item, .blogger-admin.style-two .ad-table .table-headerbottom, .blogger-admin.style-two .ad-table .bloger-card .table-responsive .table tbody tr td .ads-item, .blogger-admin.style-three .section-wrapper .bloger-card .bloger-profile, .blogger-admin.style-three .section-wrapper .bloger-card .bloger-profile .pro-right ul.pro-list, .blogger-admin .bloger-iteml .section-wrapper ul.blogerl-item, .ad-modal .modal-dialog .modal-content .modal-body .body-wrapper, .ad-modal .modal-dialog .modal-content .modal-body .body-wrapper .wrap-left .ad-type ul.ad-list, .ad-modal .modal-dialog .modal-content .modal-body .body-wrapper .wrap-left .ad-type .add-item, .create-form .section-wrapper .form-content .contact-wizard .wizard-acc, .create-form .section-wrapper .form-content .contact-wizard .wizard-acc .acc-content, .create-form .section-wrapper .link-wizard .link-input, .create-form .section-wrapper .link-wizard .price-input, .create-form .section-wrapper .spot-wizard .spot-list {
+.post-item .post-text.style-one, header .header-main .header-item .header-top .top-item, header .header-main .header-item .header-top .top-item .top-menu ul.top-list, header .header-main .header-item .header-bottom .bottom-inner, .main-content, .main-content .vertical-sidebar .sidebar-content .seller-thumb .post-status ul.status-list, .main-content .content-right .top-navbar .nav-item, .main-content .content-right .top-navbar .nav-item .left-menu, .main-content .content-right .top-navbar .nav-item .left-menu ul.left-menulist, .main-content .content-right .top-navbar .nav-item .menu-item ul.item-list, .main-content .content-right footer .footer-content, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item, .blog-categori .section-wrapper .categori-tab .tab-content .tab-pane .latest-blog .blog-list .list-item .item-text .blog-timeline, .blog-item .blog-timeline, .blog-area .section-wrapper .sidebar-widget .widget-rec-post .recent-post li, .blog-area .section-wrapper .sidebar-widget .widegt-popular-post .recent-post li, .blog-area .section-wrapper .blog-description .des-tips ul.tips-list li, .blog-card .section-wrapper .card .card-media ul.media-list, .blog-item .thumb-crount, .grid-row .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .grid-row .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item .item-content .cato-content, .blog-wizard .wizard-title, .blog-wizard .wizard-body .comments-reply ul.reply-list li, .blog-wizard .wizard-body .blog-item li, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-date, .overview-blogger .section-wrapper #tabs #tabs-1 .published-table .table-responsive table.table tbody tr td .publis-btn, .blogger-notices .item-content .item-head, .blogger-notices .item-content ul, .blogger-notices .item-content ul a, .blogger-admin .section-wrapper .bloger-card .blogs-header, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogger-list, .blogger-admin .section-wrapper .bloger-card .blogs-body .card .card-text .text-footer, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item .item-left, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogeractive-item li, .blogger-admin .section-wrapper .bloger-card .blogs-body .blogeractive-item.style-two li .item-text, .blogger-admin .section-wrapper .bloger-card .blogs-body table tbody tr td .table-item, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-titel, .blogger-admin .section-wrapper .bloger-card .blogs-body .crate-account .ac-content .left-body .ac-item, .blogger-admin .section-wrapper .bloger-card .post-header, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item.style-one, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item.style-one .item-text .author, .blogger-admin .section-wrapper .crount-card .crount-item, .blogger-admin .section-wrapper .crount-card .crount-item .item-left, .blogger-admin.style-two .bloger-card .adds-header, .blogger-admin.style-two .bloger-card .blogs-body .top-blog ul.top-list li .list-item, .blogger-admin.style-two .bloger-card .blogs-body .top-blog ul.top-list li .list-item .item-left, .blogger-admin.style-two .bloger-card.upcoming-add .blogs-body .up-add .add-item, .blogger-admin.style-two .ad-table .table-headerbottom, .blogger-admin.style-two .ad-table .bloger-card .table-responsive .table tbody tr td .ads-item, .blogger-admin.style-three .section-wrapper .bloger-card .bloger-profile, .blogger-admin.style-three .section-wrapper .bloger-card .bloger-profile .pro-right ul.pro-list, .blogger-admin .bloger-iteml .section-wrapper ul.blogerl-item, .ad-modal .modal-dialog .modal-content .modal-body .body-wrapper, .ad-modal .modal-dialog .modal-content .modal-body .body-wrapper .wrap-left .ad-type ul.ad-list, .ad-modal .modal-dialog .modal-content .modal-body .body-wrapper .wrap-left .ad-type .add-item, .create-form .section-wrapper .form-content .contact-wizard .wizard-acc, .create-form .section-wrapper .form-content .contact-wizard .wizard-acc .acc-content, .create-form .section-wrapper .link-wizard .link-input, .create-form .section-wrapper .link-wizard .price-input, .create-form .section-wrapper .spot-wizard .spot-list, .creat-account .section-wrapper .ac-categori, .creat-account.style-one .section-wrapper, .creat-account.style-three .section-wrapper .ac-form .ac-recover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -924,7 +923,7 @@ form button.custom-btn {
   content: '';
 }
 
-.about-contact .section-wrapper .about-form, .grid-row .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .grid-row .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item, .blogger-settings .card, .blogger-notices .item-content, .blogger-admin .section-wrapper .bloger-card, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item:hover, .blogger-admin .section-wrapper .crount-card .crount-item, .blogger-admin.style-three .section-wrapper .analytic-slider .swiper-wrapper .swiper-slide:hover .aly-item {
+.about-contact .section-wrapper .about-form, .grid-row .setup-blog .section-wrapper .setup-slider .swiper-wrapper .swiper-slide .setup-item, .grid-row .setup-blog .section-wrapper .setup-item, .blog-libarary .section-wrapper .blog-item, .blogger-settings .card, .blogger-notices .item-content, .blogger-admin .section-wrapper .bloger-card, .blogger-admin .section-wrapper .bloger-card .blogs-body .add-list li .add-item, .blogger-admin .section-wrapper .bloger-card .post-wrapper .blogger-item:hover, .blogger-admin .section-wrapper .crount-card .crount-item, .blogger-admin.style-three .section-wrapper .analytic-slider .swiper-wrapper .swiper-slide:hover .aly-item, .creat-account .section-wrapper .ac-categori .cat-card .card-item {
   -webkit-box-shadow: 0 5px 10px 0 rgba(55, 70, 66, 0.12);
           box-shadow: 0 5px 10px 0 rgba(55, 70, 66, 0.12);
 }
@@ -6192,5 +6191,251 @@ header .header-logo a img {
 
 .create-form .section-wrapper .spot-wizard .spot-btn button.btn.save span {
   color: #000;
+}
+
+.creat-account {
+  padding: 60px 0;
+}
+
+@media (min-width: 992px) {
+  .creat-account {
+    padding: 0;
+  }
+}
+
+.creat-account .section-wrapper {
+  overflow: visible;
+}
+
+.creat-account .section-wrapper .h-vh {
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creat-account .section-wrapper .ac-title img {
+  height: 60px;
+}
+
+.creat-account .section-wrapper .ac-title h4 {
+  margin: 0;
+}
+
+.creat-account .section-wrapper .ac-title p {
+  max-width: 300px;
+  margin-left: 0;
+}
+
+.creat-account .section-wrapper .ac-categori {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creat-account .section-wrapper .ac-categori .cat-card {
+  width: calc(100% / 2);
+}
+
+@media (min-width: 768px) {
+  .creat-account .section-wrapper .ac-categori .cat-card {
+    width: calc(100% / 4);
+  }
+}
+
+.creat-account .section-wrapper .ac-categori .cat-card .card-item {
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+}
+
+.creat-account .section-wrapper .ac-categori .cat-card .card-item h5 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.creat-account .section-wrapper .ac-categori .cat-card .card-item img {
+  height: 80px;
+  width: 80px;
+}
+
+.creat-account .section-wrapper .ac-categori .cat-card .card-item button.btn {
+  margin-top: 15px;
+  background: transparent;
+}
+
+.creat-account .section-wrapper .ac-categori .cat-card .card-item button.btn span {
+  font-weight: 600;
+  color: #000;
+}
+
+.creat-account .section-wrapper .ac-form .form-title h4 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.creat-account .section-wrapper .ac-form form .input-group input.form-control {
+  border: 0;
+  background: #e9ecef;
+}
+
+.creat-account .section-wrapper .ac-form form .input-btn {
+  text-align: center;
+}
+
+.creat-account .section-wrapper .ac-form form .input-btn button.btn {
+  width: 80%;
+}
+
+.creat-account.style-one .section-wrapper {
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.creat-account.style-one .section-wrapper .account-link {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .creat-account.style-one .section-wrapper .account-link .link-title h4 {
+    font-size: 36px;
+  }
+}
+
+.creat-account.style-one .section-wrapper .account-link .link-title p {
+  margin: 0;
+  color: #aaa;
+  font-size: 18px;
+}
+
+.creat-account.style-one .section-wrapper .account-link .link-icon {
+  padding: 50px 0;
+}
+
+.creat-account.style-one .section-wrapper .account-link .link-icon i {
+  font-size: 55px;
+  color: #000;
+}
+
+.creat-account.style-one .section-wrapper .account-link .link-btn a.btn span {
+  text-transform: capitalize;
+}
+
+.creat-account.style-two {
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.creat-account.style-two .section-wrapper .signup-thumb {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .creat-account.style-two .section-wrapper .signup-thumb {
+    display: block;
+  }
+}
+
+.creat-account.style-two .section-wrapper .signup-thumb img {
+  width: 100%;
+  height: 100vh;
+}
+
+.creat-account.style-two .section-wrapper .ac-form {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .creat-account.style-two .section-wrapper .ac-form {
+    padding: 0;
+  }
+}
+
+.creat-account.style-two .section-wrapper .ac-form .form-title {
+  text-align: center;
+}
+
+.creat-account.style-three .section-wrapper .ac-form {
+  height: 600px;
+  position: relative;
+}
+
+.creat-account.style-three .section-wrapper .ac-form form.tab-pane {
+  display: none;
+}
+
+.creat-account.style-three .section-wrapper .ac-form form.tab-pane.show {
+  display: block;
+}
+
+.creat-account.style-three .section-wrapper .ac-form form .input-group input.form-control {
+  padding-left: 30px;
+  border-radius: 0 !important;
+  border-bottom: 1px solid  silver;
+  background: transparent;
+}
+
+.creat-account.style-three .section-wrapper .ac-form form .input-group input.form-control:focus {
+  border-bottom-color: #000;
+}
+
+.creat-account.style-three .section-wrapper .ac-form form .input-group i {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.creat-account.style-three .section-wrapper .ac-form form .input-btn button.btn {
+  width: 100%;
+}
+
+.creat-account.style-three .section-wrapper .ac-form .ac-recover {
+  padding-top: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creat-account.style-three .section-wrapper .ac-form .ac-recover a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.creat-account.style-three .section-wrapper .ac-form ul.nav {
+  position: absolute;
+  bottom: 0;
+  min-width: 300px;
+}
+
+@media (min-width: 992px) {
+  .creat-account.style-three .section-wrapper .ac-form ul.nav {
+    min-width: 400px;
+  }
+}
+
+.creat-account.style-three .section-wrapper .ac-form ul.nav li.nav-item {
+  text-align: center;
+  width: calc(100% / 2);
+}
+
+.creat-account.style-three .section-wrapper .ac-form ul.nav li.nav-item button.nav-link {
+  width: 100%;
+  background: transparent;
+}
+
+.creat-account.style-three .section-wrapper .ac-form ul.nav li.nav-item button.nav-link.active {
+  color: #000;
+  font-weight: 500;
+  border-bottom: 2px solid #000;
 }
 /*# sourceMappingURL=style.css.map */
