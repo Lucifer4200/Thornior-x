@@ -313,7 +313,7 @@ button.ui-button::-moz-focus-inner {
 	pointer-events: none;
 }
 .ui-datepicker {
-	width: 17em;
+	width: 100%;
 	padding: .2em .2em 0;
 	display: none;
 }
@@ -855,6 +855,7 @@ button.ui-button::-moz-focus-inner {
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
 	margin-bottom: -1px;
 	padding-bottom: 1px;
+	position: relative;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
@@ -981,7 +982,18 @@ a.ui-button:active,
 .ui-state-active a:visited {
 	color: #000;
 	text-decoration: none;
-	border-bottom: 2px solid #000;
+	/* padding-bottom: .2rem!important;
+	border-bottom: 2px solid #000; */
+}
+
+.ui-state-active a::after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: #000;
 }
 
 /* Interaction Cues
@@ -1052,16 +1064,16 @@ a.ui-button:active,
 }
 .ui-icon,
 .ui-widget-content .ui-icon {
-	background-image: url("images/ui-icons_444444_256x240.png");
+	background-image: url("../images/logo/ui-icons_444444_256x240.png");
 }
 .ui-widget-header .ui-icon {
-	background-image: url("images/ui-icons_444444_256x240.png");
+	background-image: url("../images/logo/ui-icons_444444_256x240.png");
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon,
 .ui-button:hover .ui-icon,
 .ui-button:focus .ui-icon {
-	background-image: url("images/ui-icons_555555_256x240.png");
+	background-image: url("../images/logo/ui-icons_444444_256x240.png");
 }
 .ui-state-active .ui-icon,
 .ui-button:active .ui-icon {

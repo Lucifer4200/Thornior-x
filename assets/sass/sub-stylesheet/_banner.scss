@@ -116,7 +116,7 @@
                 &::before, &::after {
                     @extend %absolute;
                     top: 50%;
-                    height: 2px;
+                    height: 4px;
                     width: 60px;
                     background: #928888;
                     transform: translateY(-50%);
@@ -126,15 +126,9 @@
                 }
                 &::before {
                     right: 105%;
-                    @include breakpoint (sm) {
-                        right: 85%;
-                    }
                 }
                 &::after {
                     left: 105%;
-                    @include breakpoint (sm) {
-                        left: 85%;
-                    }
                 }
             }
         }

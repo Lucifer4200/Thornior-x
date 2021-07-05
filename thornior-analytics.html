@@ -210,10 +210,26 @@
                                                 </div>
                                                 <div class="header-right d-flex">
                                                     <div class="page-fillter pe-5">
-                                                        <span>Page</span><span><i class="fa fa-angle-down ms-2"></i></span>
+                                                        <div class="dropdown">
+                                                            <button class="bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span>Week</span><span><i class="fa fa-angle-down ms-2"></i></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                                              <li><a class="dropdown-item" href="#">Another</a></li>
+                                                              <li><a class="dropdown-item" href="#">Something</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div class="page-fillter">
-                                                        <span>Day</span><i class="fa fa-angle-down ms-2"></i></span>
+                                                        <button class="bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span>View</span><i class="fa fa-angle-down ms-2"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                                          <li><a class="dropdown-item" href="#">Another</a></li>
+                                                          <li><a class="dropdown-item" href="#">Something</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
@@ -232,7 +248,9 @@
                                 <div class="bloger-card mt-4">
                                     <div class="blogs-header">
                                         <h4>Advertisment</h4>
-                                        <a href="#0" class="view-more">(Pop-up) See All</a>
+                                        <button type="button" class="view-more bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            (Pop-up) See All
+                                        </button>
                                     </div>
                                     <div class="table-responsive">
                                         <table class="table caption-top">
@@ -277,7 +295,16 @@
                                                     <span>124</span>
                                                 </td>
                                                 <td>
-                                                    <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    <div class="dropdown">
+                                                        <button class="bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span><i class="fa fa-ellipsis-v"></i></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                          <li><a class="dropdown-item" href="#">Hide</a></li>
+                                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </td>
                                               </tr>
                                               <tr>
@@ -831,6 +858,410 @@
             </div>
         </footer>
         <!-- footer area ends  -->
+
+        <!-- table modal start -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="max-width: 850px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="blogger-admin style-two p-0">
+                            <div class="section-wrapper">
+                                <div class="ad-table">
+                                    <div class="bloger-card mt-4">
+                                        <div class="blogs-header">
+                                            <h4>Advertisment</h4>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table caption-top">
+                                                <thead>
+                                                  <tr>
+                                                    <th>Name</th>
+                                                    <th>Type</th>
+                                                    <th>Status</th>
+                                                    <th>Date</th>
+                                                    <th>Reach</th>
+                                                    <th>Clik</th>
+                                                    <th></th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button class="bg-transparent" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span><i class="fa fa-ellipsis-v"></i></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                              <li><a class="dropdown-item" href="#">Hide</a></li>
+                                                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>
+                                                        <div class="ads-item">
+                                                            <div class="item-thumb">
+                                                                <img src="assets/images/blog/category/01.jpg" alt="">
+                                                            </div>
+                                                            <div class="item-title">
+                                                                <h6>Company name</h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span>Top Banner</span>
+                                                    </td>
+                                                    <td>
+                                                        <div class="status">
+                                                            <span class="text-success fw-bold">Active</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-calendar-alt me-1"></i> latest update <strong>2021-02-01</strong></span>
+                                                    </td>
+                                                    <td>
+                                                        <span>12 032</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>124</span>
+                                                    </td>
+                                                    <td>
+                                                        <span><i class="fa fa-ellipsis-v"></i></span>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- table modal start -->
+
 
     </div>
     <!-- content-right start -->
