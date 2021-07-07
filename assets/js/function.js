@@ -10,6 +10,15 @@
         $('body,header,.mobile-bar,.main-menu').removeClass('active');
     });
 
+    //search bar
+    $('.search-icon').on('click', function(){
+      $('.search-content').toggleClass('open');
+    });
+
+    $('.hide-search').on('click', function() {
+        $('.search-content').removeClass('open');
+    });
+
     // menu icon-related
     $(".list-item>li>.sub-menu").parent("li").children("a").addClass("icon-down");
 
@@ -504,6 +513,7 @@
     // dateTime picker activation
     jQuery('#filter-date, #search-from-date, #search-to-date').datetimepicker();
 
+    // ui date picker
     $(function() {
         $("#datepicker").datepicker();
     });

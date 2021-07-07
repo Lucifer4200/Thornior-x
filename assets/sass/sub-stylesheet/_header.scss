@@ -13,9 +13,44 @@ header {
                         justify-content: space-between;
                     }
                     .top-search {
-                        i {
-                            cursor: pointer;
-                            color: $theme-color;
+                        @extend %flex;
+                        align-items: center;
+                        .search-icon {
+                            i {
+                                cursor: pointer;
+                                color: $theme-color;
+                            }
+                        }
+                        .search-content {
+                            position: absolute;
+                            top: 0;
+                            left: 30px;
+                            width: 250px;
+                            opacity: 0;
+                            transform: scaleX(0);
+                            transform-origin: left;
+                            z-index: 111;
+                            transition: all 0.3s ease-in-out;
+                            &.open {
+                                opacity: 1;
+                                transform: scaleX(1);
+                            }
+                            form {
+                                .input-group {
+                                    input.form-control {
+                                        background: $white-color;
+                                    }
+                                }
+                                .hide-search {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 10px;
+                                    transform: translateY(-50%);
+                                    i {
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
                         }
                     }
                     .top-logo {
